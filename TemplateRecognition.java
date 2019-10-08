@@ -1,4 +1,4 @@
-package leagueocr;
+package com.sonardraft;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -14,12 +14,13 @@ import org.opencv.highgui.HighGui;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 
-import leagueocr.db.Character;
+import com.sonardraft.db.Character;
 
 public class TemplateRecognition {
 
-	private static final String BASE = "C:\\Users\\mancuso1\\Desktop\\leagueocr\\";
+	private static final String BASE = "C:\\Users\\Sawe\\Desktop\\leagueocr\\";
 	private static final String CHARACTERPATH = "characters";
+	private static final String RESULTPATH = "result\\";
 
 	private static List<Character> characters = new ArrayList<>();
 
@@ -27,14 +28,23 @@ public class TemplateRecognition {
 	 * Konfiguration
 	 */
 
-	private static final int METHOD = Imgproc.TM_SQDIFF;
+	private static final int METHOD = Imgproc.TM_SQDIFF_NORMED;
+
+	private TemplateRecognition() {
+
+	}
 
 	public static void init() {
+
+		Tools.clearFolder(new File(BASE + RESULTPATH));
 
 		File file = new File(BASE + CHARACTERPATH);
 
 		for (File character : file.listFiles()) {
-			characters.add(new Character(Imgcodecs.imread(character.getAbsolutePath()), character.getName()));
+
+			if (!character.isDirectory()) {
+				characters.add(new Character(Imgcodecs.imread(character.getAbsolutePath()), character.getName()));
+			}
 		}
 	}
 
@@ -64,15 +74,23 @@ public class TemplateRecognition {
 			Imgproc.matchTemplate(screenshot, character.getMat(), result, METHOD);
 
 			Core.normalize(result, result, 0, 1, Core.NORM_MINMAX, -1, new Mat());
-			Point matchLoc = Core.minMaxLoc(result).minLoc;
-			Tools.saveBufferedImage(createResultImage(matchLoc, screenshot, character.getMat()), BASE + "result.png");
+			Point matchLoc = Core.minMaxLoc(result).maxLoc;
 
+			System.out.println(character.getName() + ": " + Core.minMaxLoc(result).minVal);
+			if (Core.minMaxLoc(result).minVal > 0) {
+
+				Mat mat = new Mat();
+				screenshot.copyTo(mat);
+
+				Tools.saveBufferedImage(createResultImage(matchLoc, mat, character.getMat()),
+						BASE + RESULTPATH + character.getName() + ".png");
+			}
 		}
 
 	}
 
 	private static Mat screenshot() {
-		return Imgcodecs.imread("C:\\Users\\mancuso1\\Desktop\\leagueocr\\image.png");
+		return Imgcodecs.imread(BASE + "19201080pick.png");
 	}
 
 }
