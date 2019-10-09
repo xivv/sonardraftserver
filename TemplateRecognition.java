@@ -18,17 +18,17 @@ import com.sonardraft.db.Character;
 
 public class TemplateRecognition {
 
-	private static final String BASE = "C:\\Users\\Sawe\\Desktop\\leagueocr\\";
-	private static final String CHARACTERPATH = "characters";
-	private static final String RESULTPATH = "result\\";
-
 	private static List<Character> characters = new ArrayList<>();
 
 	/**
 	 * Konfiguration
 	 */
 
-	private static final int METHOD = Imgproc.TM_SQDIFF_NORMED;
+	private static final String BASE = "C:\\Users\\mancuso1\\Desktop\\leagueocr\\";
+	private static final String CHARACTERPATH = BASE + "characters";
+	private static final String RESULTPATH = BASE + "result\\";
+
+	private static final int METHOD = Imgproc.TM_SQDIFF;
 
 	private TemplateRecognition() {
 
@@ -36,9 +36,10 @@ public class TemplateRecognition {
 
 	public static void init() {
 
-		Tools.clearFolder(new File(BASE + RESULTPATH));
+		Tools.clearFolder(new File(RESULTPATH));
+		Tools.resizeImages(CHARACTERPATH, 64);
 
-		File file = new File(BASE + CHARACTERPATH);
+		File file = new File(CHARACTERPATH);
 
 		for (File character : file.listFiles()) {
 
@@ -60,7 +61,7 @@ public class TemplateRecognition {
 	private static BufferedImage createResultImage(Point matchLoc, Mat screenshot, Mat template) {
 
 		Imgproc.rectangle(screenshot, matchLoc, new Point(matchLoc.x + template.cols(), matchLoc.y + template.rows()),
-				new Scalar(255, 0, 0), 2, 8, 0);
+				new Scalar(0, 255, 0), 2, 8, 0);
 
 		return Tools.toBufferedImage(HighGui.toBufferedImage(screenshot));
 	}
@@ -70,27 +71,28 @@ public class TemplateRecognition {
 		Mat screenshot = screenshot();
 
 		for (Character character : characters) {
-			Mat result = prepareResult(screenshot, character.getMat());
-			Imgproc.matchTemplate(screenshot, character.getMat(), result, METHOD);
+
+			Mat mat = new Mat();
+			screenshot.copyTo(mat);
+
+			Mat result = prepareResult(mat, character.getMat());
+			Imgproc.matchTemplate(mat, character.getMat(), result, METHOD);
 
 			Core.normalize(result, result, 0, 1, Core.NORM_MINMAX, -1, new Mat());
-			Point matchLoc = Core.minMaxLoc(result).maxLoc;
+			Point matchLoc = Core.minMaxLoc(result).minLoc;
 
 			System.out.println(character.getName() + ": " + Core.minMaxLoc(result).minVal);
-			if (Core.minMaxLoc(result).minVal > 0) {
+			// if (Core.minMaxLoc(result).minVal > 0) {
 
-				Mat mat = new Mat();
-				screenshot.copyTo(mat);
-
-				Tools.saveBufferedImage(createResultImage(matchLoc, mat, character.getMat()),
-						BASE + RESULTPATH + character.getName() + ".png");
-			}
+			Tools.saveBufferedImage(createResultImage(matchLoc, mat, character.getMat()),
+					RESULTPATH + character.getName() + ".png");
+			// }
 		}
 
 	}
 
 	private static Mat screenshot() {
-		return Imgcodecs.imread(BASE + "19201080pick.png");
+		return Imgcodecs.imread(BASE + "19201080.png");
 	}
 
 }
