@@ -79,11 +79,11 @@ public class TemplateRecognition {
 		Imgproc.cvtColor(reference, hsvTest2, Imgproc.COLOR_BGR2HSV);
 
 		int hBins = 50, sBins = 60;
-		int[] histSize = { hBins, sBins };
+		int[] histSize = { hBins, sBins, 16 };
 		// hue varies from 0 to 179, saturation from 0 to 255
-		float[] ranges = { 0, 180, 0, 256 };
+		float[] ranges = { 0, 180, 0, 256 , 0, 256};
 		// Use the 0-th and 1-st channels
-		int[] channels = { 0, 1 };
+		int[] channels = { 0, 1, 2 };
 
 		Mat histTest1 = new Mat(), histTest2 = new Mat();
 
@@ -95,7 +95,7 @@ public class TemplateRecognition {
 		Imgproc.calcHist(hsvTest2List, new MatOfInt(channels), new Mat(), histTest2, new MatOfInt(histSize),
 				new MatOfFloat(ranges), false);
 		Core.normalize(histTest2, histTest2, 0, 1, Core.NORM_MINMAX);
-
+		
 		return Imgproc.compareHist(histTest2, histTest1, 0);
 	}
 
@@ -112,23 +112,29 @@ public class TemplateRecognition {
 			Imgproc.matchTemplate(mat, character.getMat(), result, Variables.METHOD);
 
 			Core.normalize(result, result, 0, 1, Core.NORM_MINMAX, -1, new Mat());
-			Point matchLoc = Core.minMaxLoc(result).minLoc;
+			Point matchLoc = Core.minMaxLoc(result).maxLoc;
 
 			Rect rect = new Rect((int) matchLoc.x, (int) matchLoc.y, 64, 64);
 			Mat hist = screenshot.submat(rect);
 
-			Double diff = checkDifference(character.getMat(), hist, Core.minMaxLoc(result).minVal);
-			System.out.println(character.getName() + " : " + diff);
-
-			Tools.saveBufferedImage(createResultImage(matchLoc, mat, character.getMat()),
-					Variables.RESULTPATH + character.getName() + ".png");
-
+			// System.out.println(character.getName() + " : " +
+			// Core.minMaxLoc(result).minVal);
+			Double diff = checkDifference(character.getMat(), hist, Core.minMaxLoc(result).maxVal);
+		//	System.out.println(character.getName() + " : " + diff);
+			System.out.println(character.getName() + " : " + Core.minMaxLoc(result).minVal);
+			
+			
+			//if (diff > 0.036) {
+				System.out.println(character.getName() + " : " + diff);
+				Tools.saveBufferedImage(createResultImage(matchLoc, mat, character.getMat()),
+						Variables.RESULTPATH + character.getName() + ".png");
+			//}
 		}
 
 	}
 
 	private static Mat screenshot() {
-		return Imgcodecs.imread(Variables.BASE + "19201080sidebarlockedin.png");
+		return Imgcodecs.imread(Variables.SCREENPATH + "pick1.png");
 	}
 
 }
