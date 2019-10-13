@@ -7,8 +7,29 @@ public class Initializer {
 	public static void main(String[] args) {
 		// Initialize needed libraries
 		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-		TemplateRecognition.init();
-		TemplateRecognition.check();
+
+		// Start all listeners
+
+		Thread listeners = new Thread() {
+
+			public void run() {
+				while (Tools.programmRunning) {
+					Tools.isClientRunning();
+				}
+			}
+		};
+
+		listeners.start();
+
+		Thread programm = new Thread() {
+
+			public void run() {
+				Tools.start();
+			}
+		};
+
+		programm.start();
+
 	}
 
 }

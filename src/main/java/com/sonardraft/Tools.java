@@ -1,19 +1,28 @@
 package com.sonardraft;
 
-import java.awt.AWTException;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.image.BufferedImage;
+import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.ByteBuffer;
+import java.nio.channels.AsynchronousFileChannel;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FilenameUtils;
 
+import com.sonardraft.db.Character;
+import com.sonardraft.db.Draft;
 import com.sun.jna.platform.WindowUtils;
 
 public class Tools {
@@ -23,67 +32,87 @@ public class Tools {
 	}
 
 	public static boolean clientRunning = false;
+	public static boolean programmRunning = true;
+	public static Draft draft = new Draft();
 
 	public static void start() {
 
-		System.out.println("Waiting for League of Legends to start...");
+		File screenPathDirectory = new File(Variables.SCREENPATH);
 
-		while (clientRunning = false) {
-			// Listen for League of Legends to start
-			WindowUtils.getAllWindows(true).forEach(desktopWindow -> {
+		while (programmRunning) {
 
-				if (desktopWindow.getTitle().equals("League of Legends")) {
+			TemplateRecognition.init();
 
-					clientRunning = true;
+			System.out.println("Waiting for League of Legends to start...");
+			while (clientRunning) {
+
+				Tools.takeScreenshots();
+
+				int counter = 0;
+				draft.getRed().getPicks().clear();
+				draft.getBlue().getPicks().clear();
+
+				for (File file : screenPathDirectory.listFiles()) {
+
+					Character character = TemplateRecognition.featureMatchingSimple(file);
+
+					if (counter > 4) {
+						draft.getRed().getPicks().add(character);
+					} else if (counter < 5) {
+						draft.getBlue().getPicks().add(character);
+					}
+
+					counter++;
 				}
-			});
-		}
 
-		System.out.println("Listening for champion picks...");
-	}
-
-	public static void main(String[] args) throws AWTException {
-
-		WindowUtils.getAllWindows(true).forEach(desktopWindow -> {
-
-			// This is only for 1920x1080
-			if (desktopWindow.getTitle().equals("League of Legends")) {
-				System.out.println(desktopWindow.getLocAndSize());
-
-				// 10 x 25 - 215 x 60 Team 1 Bann
-				// 1070 x 25 - 1270 x 60 Team 2 Bann
-
-				// 40 x 85 - 75 x 600 Team 1 Pick
-				// 1170 x 85 - 1205 x 85 Team 2 Pick
+				System.out.println(draft.getBlue().toString());
+				System.out.println(draft.getRed().toString());
 
 				try {
-					Robot robot = new Robot();
-
-					Point base = new Point(desktopWindow.getLocAndSize().x, desktopWindow.getLocAndSize().y);
-
-					Rectangle team1Bann = new Rectangle(base.x + 10, base.y + 25, 205, 45);
-					Rectangle team2Bann = new Rectangle(base.x + 1070, base.y + 25, 205, 45);
-
-					Rectangle team1Pick = new Rectangle(base.x + 0, base.y + 90, 150, 400);
-					Rectangle team2Pick = new Rectangle(base.x + 1180, base.y + 90, 100, 400);
-
-					BufferedImage bann1 = robot.createScreenCapture(team1Bann);
-					BufferedImage bann2 = robot.createScreenCapture(team2Bann);
-					BufferedImage pick1 = robot.createScreenCapture(team1Pick);
-					BufferedImage pick2 = robot.createScreenCapture(team2Pick);
-
-					saveBufferedImage(bann1, Variables.SCREENPATH + "bann1.png");
-					saveBufferedImage(bann2, Variables.SCREENPATH + "bann2.png");
-					saveBufferedImage(pick1, Variables.SCREENPATH + "pick1.png");
-					saveBufferedImage(pick2, Variables.SCREENPATH + "pick2.png");
-
-				} catch (AWTException e) {
+					Thread.sleep(Variables.SCREENSHOTINTERVALL);
+				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
 
 			}
-		});
+		}
+	}
 
+	public static void takeScreenshots() {
+
+		WindowUtils.getAllWindows(true).forEach(desktopWindow -> {
+
+			if (desktopWindow.getTitle().equals("League of Legends")) {
+
+				// CHAR 1
+				// 50x100 - 70x70 - 100
+				try {
+					Robot robot = new Robot();
+					for (var a = 0; a < 2; a++) {
+
+						Point base = new Point();
+
+						if (a == 0) {
+							base = new Point(desktopWindow.getLocAndSize().x + 10,
+									desktopWindow.getLocAndSize().y + 100);
+						} else if (a == 1) {
+							base = new Point(desktopWindow.getLocAndSize().x + 1195,
+									desktopWindow.getLocAndSize().y + 100);
+						}
+
+						for (var i = 0; i < 5; i++) {
+
+							Rectangle rect = new Rectangle(base.x, base.y + i * 80, 110 - (a == 1 ? 40 : 0), 70);
+
+							BufferedImage image = robot.createScreenCapture(rect);
+							saveBufferedImage(image, Variables.SCREENPATH + a + i + ".png");
+						}
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
 	}
 
 	public static void resizeImages(String path, Integer size) {
@@ -151,11 +180,53 @@ public class Tools {
 	}
 
 	public static void saveBufferedImage(BufferedImage image, String path) {
-		try {
-			File outputfile = new File(path);
-			ImageIO.write(image, "png", outputfile);
+
+		try (AsynchronousFileChannel asyncFile = AsynchronousFileChannel.open(Paths.get(path), StandardOpenOption.WRITE,
+				StandardOpenOption.CREATE)) {
+			asyncFile.write(convertImageData(image), 0);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+	}
+
+	public static void isClientRunning() {
+		try {
+			Runtime runtime = Runtime.getRuntime();
+			String cmds[] = { "cmd", "/c", "tasklist" };
+			Process proc = runtime.exec(cmds);
+			InputStream inputstream = proc.getInputStream();
+			InputStreamReader inputstreamreader = new InputStreamReader(inputstream);
+			BufferedReader bufferedreader = new BufferedReader(inputstreamreader);
+			String result = "";
+			String line = "";
+			while ((line = bufferedreader.readLine()) != null) {
+				result += line;
+			}
+
+			if (result.contains("LeagueClient.exe")) {
+				clientRunning = true;
+				Thread.sleep(5000);
+			} else {
+				clientRunning = false;
+				Thread.sleep(2000);
+			}
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			System.out.println("Cannot query the tasklist for some reason.");
+		}
+
+	}
+
+	public static ByteBuffer convertImageData(BufferedImage bi) {
+		ByteArrayOutputStream out = new ByteArrayOutputStream();
+		try {
+			ImageIO.write(bi, "png", out);
+			return ByteBuffer.wrap(out.toByteArray());
+		} catch (IOException ex) {
+			// TODO
+		}
+		return null;
 	}
 }
