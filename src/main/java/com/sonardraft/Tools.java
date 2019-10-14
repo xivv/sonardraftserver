@@ -6,6 +6,7 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.image.BufferedImage;
+import java.awt.image.DataBufferByte;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -16,10 +17,14 @@ import java.nio.ByteBuffer;
 import java.nio.channels.AsynchronousFileChannel;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FilenameUtils;
+import org.opencv.core.CvType;
+import org.opencv.core.Mat;
 
 import com.sonardraft.db.Character;
 import com.sonardraft.db.Draft;
@@ -37,24 +42,23 @@ public class Tools {
 
 	public static void start() {
 
-		File screenPathDirectory = new File(Variables.SCREENPATH);
+		Variables.init();
+		TemplateRecognition.init();
 
 		while (programmRunning) {
-
-			TemplateRecognition.init();
 
 			System.out.println("Waiting for League of Legends to start...");
 			while (clientRunning) {
 
-				Tools.takeScreenshots();
+				List<Mat> screenshots = Tools.takeScreenshots(true);
 
 				int counter = 0;
 				draft.getRed().getPicks().clear();
 				draft.getBlue().getPicks().clear();
 
-				for (File file : screenPathDirectory.listFiles()) {
+				for (Mat mat : screenshots) {
 
-					Character character = TemplateRecognition.featureMatchingSimple(file);
+					Character character = TemplateRecognition.featureMatchingSimple(mat);
 
 					if (counter > 4) {
 						draft.getRed().getPicks().add(character);
@@ -78,7 +82,9 @@ public class Tools {
 		}
 	}
 
-	public static void takeScreenshots() {
+	public static List<Mat> takeScreenshots(boolean saveResult) {
+
+		List<Mat> result = new ArrayList<>();
 
 		WindowUtils.getAllWindows(true).forEach(desktopWindow -> {
 
@@ -105,7 +111,13 @@ public class Tools {
 							Rectangle rect = new Rectangle(base.x, base.y + i * 80, 110 - (a == 1 ? 40 : 0), 70);
 
 							BufferedImage image = robot.createScreenCapture(rect);
-							saveBufferedImage(image, Variables.SCREENPATH + a + i + ".png");
+
+							// Convert image to mat so we dont need to save it for performance
+							result.add(bufferedImageToMat(image));
+
+							if (saveResult) {
+								saveBufferedImage(image, Variables.SCREENPATH + a + i + ".png");
+							}
 						}
 					}
 				} catch (Exception e) {
@@ -113,6 +125,8 @@ public class Tools {
 				}
 			}
 		});
+
+		return result;
 	}
 
 	public static void resizeImages(String path, Integer size) {
@@ -217,6 +231,13 @@ public class Tools {
 			System.out.println("Cannot query the tasklist for some reason.");
 		}
 
+	}
+
+	public static Mat bufferedImageToMat(BufferedImage bi) {
+		Mat mat = new Mat(bi.getHeight(), bi.getWidth(), CvType.CV_8UC3);
+		byte[] data = ((DataBufferByte) bi.getRaster().getDataBuffer()).getData();
+		mat.put(0, 0, data);
+		return mat;
 	}
 
 	public static ByteBuffer convertImageData(BufferedImage bi) {

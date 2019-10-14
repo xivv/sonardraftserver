@@ -13,12 +13,12 @@ public class Variables {
 	public static final String CHARACTERURL = "https://na.leagueoflegends.com/en/game-info/champions/";
 	public static final String[] IMAGEFORMATS = { "png" };
 
-	public static final String BASE = "C:\\Users\\Sawe\\git\\leagueocr\\";
+	public static String BASE = "";
 	public static final String CHARACTERPATH = BASE + "characters";
 	public static final String RESULTPATH = BASE + "result\\";
 	public static final String SCREENPATH = BASE + "screenshots\\";
 
-	public static final int METHOD = Imgproc.TM_CCOEFF;
+	public static final int METHOD = Imgproc.TM_SQDIFF_NORMED;
 	public static Screensize resolution;
 
 	/*
@@ -33,6 +33,8 @@ public class Variables {
 	protected static final int[] HISTOGRAMMCHANNELS = { 0, 1, 2 };
 
 	public static void init() {
+
+		BASE = System.getProperty("user.dir") + "\\";
 
 		Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
 
