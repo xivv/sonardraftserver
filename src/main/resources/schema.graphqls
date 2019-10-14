@@ -1,1 +1,17 @@
-sad
+type Query {
+	draft: Draft
+}
+
+type Draft {
+	blue: Team
+	red: Team
+}
+
+type Team {
+	picks: [Character]
+	banns: [Character]
+}
+
+type Character {
+	name: String
+}
