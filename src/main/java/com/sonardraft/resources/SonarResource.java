@@ -48,7 +48,8 @@ public class SonarResource {
 
 	private RuntimeWiring buildWiring() {
 		return RuntimeWiring.newRuntimeWiring()
-				.type(newTypeWiring("Query").dataFetcher("draft", graphQLDataFetchers.getDraft())).build();
+				.type(newTypeWiring("Query").dataFetcher("draft", graphQLDataFetchers.getDraft()))
+				.type(newTypeWiring("Query").dataFetcher("isAlive", graphQLDataFetchers.isAlive())).build();
 	}
 
 	@Bean

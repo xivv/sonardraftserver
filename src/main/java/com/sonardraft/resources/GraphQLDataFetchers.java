@@ -2,6 +2,7 @@ package com.sonardraft.resources;
 
 import org.springframework.stereotype.Component;
 
+import com.sonardraft.Tools;
 import com.sonardraft.db.Character;
 import com.sonardraft.db.Draft;
 
@@ -9,6 +10,12 @@ import graphql.schema.DataFetcher;
 
 @Component
 public class GraphQLDataFetchers {
+
+	public DataFetcher isAlive() {
+		return dataFetchingEnvironment -> {
+			return Tools.clientRunning;
+		};
+	}
 
 	public DataFetcher getDraft() {
 		return dataFetchingEnvironment -> {

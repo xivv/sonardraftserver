@@ -1,5 +1,6 @@
 type Query {
 	draft: Draft
+	isAlive: Boolean
 }
 
 type Draft {
