@@ -18,6 +18,8 @@ import java.nio.channels.AsynchronousFileChannel;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 import javax.imageio.ImageIO;
@@ -41,9 +43,6 @@ public class Tools {
 	public static Draft draft = new Draft();
 
 	public static void start() {
-
-		Variables.init();
-		TemplateRecognition.init();
 
 		while (programmRunning) {
 
@@ -80,6 +79,82 @@ public class Tools {
 
 			}
 		}
+	}
+
+	public static Draft getPriorityDraft(Draft draft) {
+
+		// Draft logic
+
+		List<Character> available = new ArrayList<>();
+		available.addAll(Variables.characters);
+
+		// Remove banned and picked
+
+		for (Character character : draft.getBlue().getBanns()) {
+			available.remove(character);
+		}
+
+		for (Character character : draft.getRed().getBanns()) {
+			available.remove(character);
+		}
+
+		for (Character character : draft.getBlue().getPicks()) {
+			available.remove(character);
+		}
+
+		for (Character character : draft.getRed().getPicks()) {
+			available.remove(character);
+		}
+
+		// Calculate
+		draft.getBlue().getCombos().addAll(cloneList(available));
+		draft.getRed().getCombos().addAll(cloneList(available));
+
+		// Check for combos
+		for (Character character : draft.getBlue().getPicks()) {
+			for (Character possibleCombo : character.getPriorities()) {
+
+				// If character is available and add the prio
+				Character foundCombo = findByName(draft.getBlue().getCombos(), possibleCombo.getName());
+
+				if (foundCombo != null) {
+					foundCombo.setPriority(foundCombo.getPriority() + possibleCombo.getPriorityBonus());
+
+					if (foundCombo.getPriority() > 100) {
+						foundCombo.setPriority(100);
+					}
+				}
+			}
+		}
+
+		for (Character character : draft.getRed().getPicks()) {
+			for (Character possibleCombo : character.getPriorities()) {
+
+				// If character is available and add the prio
+				Character foundCombo = findByName(draft.getRed().getCombos(), possibleCombo.getName());
+
+				if (foundCombo != null) {
+					foundCombo.setPriority(foundCombo.getPriority() + possibleCombo.getPriorityBonus());
+
+					if (foundCombo.getPriority() > 100) {
+						foundCombo.setPriority(100);
+					}
+				}
+			}
+		}
+
+		// Order by priority
+		Collections.sort(draft.getBlue().getCombos(), (o1, o2) -> o2.getPriority().compareTo(o1.getPriority()));
+		Collections.sort(draft.getRed().getCombos(), (o1, o2) -> o2.getPriority().compareTo(o1.getPriority()));
+
+		// Filter None and Picking
+		draft.getBlue().getCombos().remove(findByName(draft.getBlue().getCombos(), "None"));
+		draft.getBlue().getCombos().remove(findByName(draft.getBlue().getCombos(), "Picking"));
+
+		draft.getRed().getCombos().remove(findByName(draft.getRed().getCombos(), "None"));
+		draft.getRed().getCombos().remove(findByName(draft.getRed().getCombos(), "Picking"));
+
+		return draft;
 	}
 
 	public static List<Mat> takeScreenshots(boolean saveResult) {
@@ -249,5 +324,20 @@ public class Tools {
 			// TODO
 		}
 		return null;
+	}
+
+	public static Character findByName(Collection<Character> list, String name) {
+		return list.stream().filter(character -> name.equals(character.getName())).findFirst().orElse(null);
+	}
+
+	public static List<Character> cloneList(List<Character> characters) {
+
+		List<Character> clone = new ArrayList<>();
+
+		for (Character character : characters) {
+			clone.add(character.clone());
+		}
+
+		return clone;
 	}
 }

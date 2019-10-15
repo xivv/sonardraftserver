@@ -1,9 +1,21 @@
 package com.sonardraft;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
+import org.apache.commons.io.Charsets;
+import org.apache.commons.io.FilenameUtils;
+import org.opencv.core.Mat;
+import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
+
+import com.google.common.io.Resources;
+import com.google.common.reflect.TypeToken;
+import com.google.gson.Gson;
+import com.sonardraft.db.Character;
 
 public class Variables {
 
@@ -14,9 +26,9 @@ public class Variables {
 	public static final String[] IMAGEFORMATS = { "png" };
 
 	public static String BASE = "";
-	public static final String CHARACTERPATH = BASE + "characters";
-	public static final String RESULTPATH = BASE + "result\\";
-	public static final String SCREENPATH = BASE + "screenshots\\";
+	public static String CHARACTERPATH = BASE + "characters";
+	public static String RESULTPATH = BASE + "result\\";
+	public static String SCREENPATH = BASE + "screenshots\\";
 
 	public static final int METHOD = Imgproc.TM_SQDIFF_NORMED;
 	public static Screensize resolution;
@@ -27,21 +39,63 @@ public class Variables {
 	public static final int SCREENSHOTINTERVALL = 500;
 
 	/*
+	 * Quality
 	 */
 	protected static final int[] HISTOGRAMMSIZE = { 64, 64, 64 };
 	protected static final float[] HISTOGRAMMRANGE = { 0, 128, 0, 128, 0, 128 };
 	protected static final int[] HISTOGRAMMCHANNELS = { 0, 1, 2 };
 
+	/*
+	 * Statics
+	 */
+	public static List<Character> characters = new ArrayList<>();
+
 	public static void init() {
 
 		BASE = System.getProperty("user.dir") + "\\";
 
-		Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
+//		Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
+//
+//		if (screensize.width == 1920 && screensize.height == 1080) {
+//			resolution = Screensize.x1920x1080;
+//		} else if (screensize.width == 1024 && screensize.height == 768) {
+//			resolution = Screensize.x1024x768;
+//		}
 
-		if (screensize.width == 1920 && screensize.height == 1080) {
-			resolution = Screensize.x1920x1080;
-		} else if (screensize.width == 1024 && screensize.height == 768) {
-			resolution = Screensize.x1024x768;
+		// Get configured character combo properties
+
+		Tools.clearFolder(new File(Variables.RESULTPATH));
+		Tools.resizeImages(Variables.CHARACTERPATH, 64);
+
+		for (File character : new File(Variables.CHARACTERPATH).listFiles()) {
+
+			if (!character.isDirectory()) {
+
+				Mat characterMat = Imgcodecs.imread(character.getAbsolutePath());
+				Variables.characters.add(new Character(characterMat, FilenameUtils.getBaseName(character.getName())));
+			}
+		}
+
+		try {
+			URL priorityUrl = Resources.getResource("priorities.json");
+			String priorityProperties = Resources.toString(priorityUrl, Charsets.UTF_8);
+			List<Character> characterPriorities = new Gson().fromJson(priorityProperties,
+					new TypeToken<List<Character>>() {
+					}.getType());
+
+			for (Character character : characterPriorities) {
+				Character foundCharacter = Tools.findByName(Variables.characters, character.getName());
+
+				if (foundCharacter != null) {
+					foundCharacter.setPriorities(character.getPriorities());
+				} else {
+					System.err
+							.println("Character with name " + character.getName() + " doesnt exist in image directory");
+				}
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 
 	}

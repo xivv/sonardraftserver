@@ -1,5 +1,8 @@
 package com.sonardraft.db;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.opencv.core.Mat;
 
 public class Character {
@@ -8,27 +11,24 @@ public class Character {
 	private Mat mat;
 	private Mat histogramm;
 	private Integer priority = 0;
-
-	public Integer getPriority(Draft draft) {
-
-		// Draft logic
-
-		if (name == "Yasou") {
-
-			// Pick
-			// Orianna, Malphite, Jarvan
-
-			// Bann
-			// Pantheon
-
-		}
-
-		return priority;
-	}
+	private Integer priorityBonus = 0;
+	private List<Character> priorities = new ArrayList<>();
 
 	public Character(String name) {
 		super();
 		this.name = name;
+	}
+
+	public Character(String name, Integer priority) {
+		super();
+		this.name = name;
+		this.priority = priority;
+	}
+
+	public Character(Mat mat, String name) {
+		super();
+		this.name = name;
+		this.mat = mat;
 	}
 
 	public Character(Mat mat, Mat histogramm, String name) {
@@ -66,4 +66,31 @@ public class Character {
 		this.priority = priority;
 	}
 
+	public List<Character> getPriorities() {
+		return priorities;
+	}
+
+	public void setPriorities(List<Character> priorities) {
+		this.priorities = priorities;
+	}
+
+	public Integer getPriorityBonus() {
+		return priorityBonus;
+	}
+
+	public void setPriorityBonus(Integer priorityBonus) {
+		this.priorityBonus = priorityBonus;
+	}
+
+	public Character clone(Integer priority) {
+		return new Character(this.name, priority);
+	}
+
+	public Character clone() {
+		return new Character(this.name);
+	}
+
+	public Integer getPriority() {
+		return this.priority;
+	}
 }

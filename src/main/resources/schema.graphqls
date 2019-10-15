@@ -1,6 +1,8 @@
 type Query {
 	draft: Draft
 	isAlive: Boolean
+	isClientRunning: Boolean
+	toggleClientRunning: Boolean
 }
 
 type Draft {
@@ -11,8 +13,11 @@ type Draft {
 type Team {
 	picks: [Character]
 	banns: [Character]
+	combos: [Character]
 }
 
 type Character {
 	name: String
+	priorities: [Character]
+	priority: Int
 }

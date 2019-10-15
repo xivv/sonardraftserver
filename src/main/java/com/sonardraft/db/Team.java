@@ -7,10 +7,12 @@ public class Team {
 
 	private List<Character> picks;
 	private List<Character> banns;
+	private List<Character> combos;
 
 	public Team() {
 		picks = new ArrayList<>();
 		banns = new ArrayList<>();
+		setCombos(new ArrayList<>());
 	}
 
 	@Override
@@ -39,6 +41,14 @@ public class Team {
 
 	public void setBanns(List<Character> banns) {
 		this.banns = banns;
+	}
+
+	public List<Character> getCombos() {
+		return combos;
+	}
+
+	public void setCombos(List<Character> combos) {
+		this.combos = combos;
 	}
 
 }

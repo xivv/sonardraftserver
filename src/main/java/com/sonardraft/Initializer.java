@@ -18,8 +18,9 @@ public class Initializer {
 
 		// Start API
 		SpringApplication.run(Initializer.class, args);
-
 		// Start all listeners
+
+		Variables.init();
 
 		// testSingle("bard.png");
 		// startProgramm();
@@ -54,8 +55,6 @@ public class Initializer {
 	}
 
 	public static void testSingle(String name) {
-
-		TemplateRecognition.init();
 		System.out.println(TemplateRecognition.featureMatchingSimple(new File(Variables.SCREENPATH + name)).getName());
 	}
 

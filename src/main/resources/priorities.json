@@ -1,0 +1,57 @@
+[
+	{
+		"name": "Yasuo",
+		"priorities": [
+			{
+				"name": "Malphite",
+				"priorityBonus": "50"
+			},
+			{
+				"name": "Orianna",
+				"priorityBonus": "70"
+			},
+			{
+				"name": "Rakan",
+				"priorityBonus": "100"
+			},
+			{
+				"name": "MonkeyKing",
+				"priorityBonus": "15"
+			},
+			{
+				"name": "Braum",
+				"priorityBonus": "15"
+			}
+		]
+	},
+	{
+		"name": "Annie",
+		"priorities": [
+			{
+				"name": "Hecarim",
+				"priorityBonus": "60"
+			},
+			{
+				"name": "Brand",
+				"priorityBonus": "20"
+			}
+		]
+	},
+	{
+		"name": "Sona",
+		"priorities": [
+			{
+				"name": "Ezreal",
+				"priorityBonus": "45"
+			},
+			{
+				"name": "Orianna",
+				"priorityBonus": "60"
+			},
+			{
+				"name": "Gragas",
+				"priorityBonus": "15"
+			}
+		]
+	}
+]

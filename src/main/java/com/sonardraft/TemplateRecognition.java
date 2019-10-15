@@ -2,11 +2,9 @@ package com.sonardraft;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.apache.commons.io.FilenameUtils;
 import org.opencv.core.Core;
 import org.opencv.core.Core.MinMaxLocResult;
 import org.opencv.core.CvType;
@@ -23,8 +21,6 @@ import com.sonardraft.db.Character;
 
 public class TemplateRecognition {
 
-	private static List<Character> characters = new ArrayList<>();
-
 	private TemplateRecognition() {
 
 	}
@@ -34,7 +30,7 @@ public class TemplateRecognition {
 		Character bestCharacter = null;
 		Double bestValue = 1d;
 
-		for (Character character : characters) {
+		for (Character character : Variables.characters) {
 			Mat template = character.getMat();
 
 			Mat resultMatrix = new Mat();
@@ -60,22 +56,6 @@ public class TemplateRecognition {
 		return featureMatchingSimple(source);
 	}
 
-	public static void init() {
-
-		Tools.clearFolder(new File(Variables.RESULTPATH));
-		Tools.resizeImages(Variables.CHARACTERPATH, 64);
-
-		for (File character : new File(Variables.CHARACTERPATH).listFiles()) {
-
-			if (!character.isDirectory()) {
-
-				Mat characterMat = Imgcodecs.imread(character.getAbsolutePath());
-				characters.add(new Character(characterMat, calculateHistogramm(characterMat),
-						FilenameUtils.getBaseName(character.getName())));
-			}
-		}
-	}
-
 	public static BufferedImage createResultImage(Point matchLoc, Mat screenshot, Mat template) {
 
 		Imgproc.rectangle(screenshot, matchLoc, new Point(matchLoc.x + template.cols(), matchLoc.y + template.rows()),
@@ -84,7 +64,7 @@ public class TemplateRecognition {
 		return Tools.toBufferedImage(HighGui.toBufferedImage(screenshot));
 	}
 
-	private static Mat calculateHistogramm(Mat mat) {
+	public static Mat calculateHistogramm(Mat mat) {
 
 		Mat histogramm = new Mat();
 		Mat histgrammResult = new Mat();
