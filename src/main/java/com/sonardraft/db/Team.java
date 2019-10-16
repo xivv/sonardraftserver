@@ -8,11 +8,21 @@ public class Team {
 	private List<Character> picks;
 	private List<Character> banns;
 	private List<Character> combos;
+	private List<Role> openRoles;
+
+	public List<Role> getOpenRoles() {
+		return openRoles;
+	}
+
+	public void setOpenRoles(List<Role> openRoles) {
+		this.openRoles = openRoles;
+	}
 
 	public Team() {
 		picks = new ArrayList<>();
 		banns = new ArrayList<>();
 		setCombos(new ArrayList<>());
+		setOpenRoles(new ArrayList<>());
 	}
 
 	@Override

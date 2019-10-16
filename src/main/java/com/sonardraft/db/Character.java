@@ -7,12 +7,20 @@ import org.opencv.core.Mat;
 
 public class Character {
 
-	private String name;
 	private Mat mat;
 	private Mat histogramm;
-	private Integer priority = 0;
-	private Integer priorityBonus = 0;
+
+	private String name;
+	private List<Role> roles = new ArrayList<>();
+
 	private List<Character> priorities = new ArrayList<>();
+
+	private Integer priorityBonus = 0;
+	private Integer priority = 0;
+
+	public Character() {
+
+	}
 
 	public Character(String name) {
 		super();
@@ -82,15 +90,31 @@ public class Character {
 		this.priorityBonus = priorityBonus;
 	}
 
-	public Character clone(Integer priority) {
-		return new Character(this.name, priority);
-	}
-
 	public Character clone() {
-		return new Character(this.name);
+
+		Character newCharacter = new Character();
+
+		newCharacter.setPriorityBonus(this.priorityBonus);
+		newCharacter.setName(this.name);
+		newCharacter.setRoles(this.roles);
+
+		for (Role role : this.roles) {
+
+		}
+
+		return newCharacter;
 	}
 
 	public Integer getPriority() {
 		return this.priority;
 	}
+
+	public List<Role> getRoles() {
+		return roles;
+	}
+
+	public void setRoles(List<Role> roles) {
+		this.roles = roles;
+	}
+
 }

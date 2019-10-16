@@ -1,871 +1,1250 @@
 [
 	{
 		"name": "Aatrox",
-		"roles": ["Top","Jungle"],
+		"roles": [
+			"Top",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Ahri",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Akali",
-		"roles": ["Mid","Top"],
+		"roles": [
+			"Mid",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Alistar",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Amumu",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Anivia",
-		"roles": ["Mid","Top"],
+		"roles": [
+			"Mid",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Annie",
-		"roles": ["Mid","Support"],
+		"roles": [
+			"Mid",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Ashe",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "AurelionSol",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Azir",
-		"roles": ["Mid","Top"],
+		"roles": [
+			"Mid",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Bard",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Blitzcrank",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Brand",
-		"roles": ["Support"],
+		"roles": [
+			"Support",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Braum",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Caitlyn",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Camille",
-		"roles": ["Jungle","Top"],
+		"roles": [
+			"Jungle",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Cassiopeia",
-		"roles": ["Mid","Bottom"],
+		"roles": [
+			"Mid",
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Chogath",
-		"roles": ["Top","Jungle"],
+		"roles": [
+			"Top",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Corki",
-		"roles": ["Mid","Bottom"],
+		"roles": [
+			"Mid",
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Darius",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Diana",
-		"roles": ["Mid","Jungle"],
+		"roles": [
+			"Mid",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Draven",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "DrMundo",
-		"roles": ["Top","Jungle"],
+		"roles": [
+			"Top",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Ekko",
-		"roles": ["Top","Jungle","Mid"],
+		"roles": [
+			"Top",
+			"Jungle",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Elise",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Evelynn",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Ezreal",
-		"roles": ["Bottom","Mid"],
+		"roles": [
+			"Bottom",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Fiddlesticks",
-		"roles": ["Jungle","Support"],
+		"roles": [
+			"Jungle",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Fiora",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Fizz",
-		"roles": ["Jungle","Mid"],
+		"roles": [
+			"Jungle",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Galio",
-		"roles": ["Support","Mid"],
+		"roles": [
+			"Support",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Gangplank",
-		"roles": ["Top","Jungle","Mid"],
+		"roles": [
+			"Top",
+			"Jungle",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Garen",
-		"roles": ["Top","Mid","Bottom"],
+		"roles": [
+			"Top",
+			"Mid",
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Gnar",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Gragas",
-		"roles": ["Mid","Jungle"],
+		"roles": [
+			"Mid",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Graves",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Hecarim",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Heimerdinger",
-		"roles": ["Mid","Bottom","Top"],
+		"roles": [
+			"Mid",
+			"Bottom",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Illaoi",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Irelia",
-		"roles": ["Top","Mid"],
+		"roles": [
+			"Top",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Ivern",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Janna",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "JarvanIV",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Jax",
-		"roles": ["Jungle","Top"],
+		"roles": [
+			"Jungle",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Jayce",
-		"roles": ["Top","Mid"],
+		"roles": [
+			"Top",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Jhin",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Jinx",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Kaisa",
-		"roles": ["Bottom","Jungle"],
+		"roles": [
+			"Bottom",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Kalista",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Karma",
-		"roles": ["Support","Mid","Top"],
+		"roles": [
+			"Support",
+			"Mid",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Karthus",
-		"roles": ["Mid","Jungle"],
+		"roles": [
+			"Mid",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Kassadin",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Katarina",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Kayle",
-		"roles": ["Mid","Bottom","Top"],
+		"roles": [
+			"Mid",
+			"Bottom",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Kayn",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Kennen",
-		"roles": ["Bottom","Support","Top"],
+		"roles": [
+			"Bottom",
+			"Support",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Khazix",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Kindred",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Kled",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "KogMaw",
-		"roles": ["Mid","Bottom"],
+		"roles": [
+			"Mid",
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Leblanc",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "LeeSin",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Leona",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Lissandra",
-		"roles": ["Mid","Top"],
+		"roles": [
+			"Mid",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Lucian",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Lulu",
-		"roles": ["Support","Mid"],
+		"roles": [
+			"Support",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Lux",
-		"roles": ["Support","Mid"],
+		"roles": [
+			"Support",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Malphite",
-		"roles": ["Top","Mid","Jungle"],
+		"roles": [
+			"Top",
+			"Mid",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Malzahar",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Maokai",
-		"roles": ["Jungle","Top"],
+		"roles": [
+			"Jungle",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "MasterYi",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "MissFortune",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "MonkeyKing",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Mordekaiser",
-		"roles": ["Mid","Top"],
+		"roles": [
+			"Mid",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Morgana",
-		"roles": ["Mid","Support"],
+		"roles": [
+			"Mid",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Nami",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Nasus",
-		"roles": ["Top","Jungle"],
+		"roles": [
+			"Top",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Nautilus",
-		"roles": ["Support","Mid","Top"],
+		"roles": [
+			"Support",
+			"Mid",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Neeko",
-		"roles": ["Mid","Support"],
+		"roles": [
+			"Mid",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Nidalee",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Nocturne",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Nunu",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Olaf",
-		"roles": ["Top","Jungle"],
+		"roles": [
+			"Top",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Orianna",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Ornn",
-		"roles": ["Top","Jungle"],
+		"roles": [
+			"Top",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Pantheon",
-		"roles": ["Jungle","Top","Mid"],
+		"roles": [
+			"Jungle",
+			"Top",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Poppy",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Pyke",
-		"roles": ["Support","Mid"],
+		"roles": [
+			"Support",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Qiyana",
-		"roles": ["Mid","Jungle"],
+		"roles": [
+			"Mid",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Quinn",
-		"roles": ["Top","Bottom"],
+		"roles": [
+			"Top",
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Rakan",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Rammus",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "RekSai",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Renekton",
-		"roles": ["Top","Mid"],
+		"roles": [
+			"Top",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Rengar",
-		"roles": ["Jungle","Top"],
+		"roles": [
+			"Jungle",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Riven",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Rumble",
-		"roles": ["Top","Mid"],
+		"roles": [
+			"Top",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Ryze",
-		"roles": ["Top","Mid"],
+		"roles": [
+			"Top",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Sejuani",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Shaco",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Shen",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Shyvana",
-		"roles": ["Top","Jungle"],
+		"roles": [
+			"Top",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Singed",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Sion",
-		"roles": ["Top","Support"],
+		"roles": [
+			"Top",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Sivir",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Skarner",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Sona",
-		"roles": ["Mid","Bottom","Support"],
+		"roles": [
+			"Mid",
+			"Bottom",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Soraka",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Swain",
-		"roles": ["Top","Mid"],
+		"roles": [
+			"Top",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Sylas",
-		"roles": ["Top","Mid","Jungle"],
+		"roles": [
+			"Top",
+			"Mid",
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Syndra",
-		"roles": ["Mid","Bottom"],
+		"roles": [
+			"Mid",
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "TahmKench",
-		"roles": ["Top","Support"],
+		"roles": [
+			"Top",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Taliyah",
-		"roles": ["Jungle","Mid"],
+		"roles": [
+			"Jungle",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Talon",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Taric",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Teemo",
-		"roles": ["Top","Mid"],
+		"roles": [
+			"Top",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Thresh",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Tristana",
-		"roles": ["Bottom","Mid"],
+		"roles": [
+			"Bottom",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Trundle",
-		"roles": ["Top","Jungle","Support"],
+		"roles": [
+			"Top",
+			"Jungle",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Tryndamere",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "TwistedFate",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Twitch",
-		"roles": ["Jungle","Bottom"],
+		"roles": [
+			"Jungle",
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Udyr",
-		"roles": ["Jungle","Top"],
+		"roles": [
+			"Jungle",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Urgot",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Varus",
-		"roles": ["Bottom","Mid"],
+		"roles": [
+			"Bottom",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Vayne",
-		"roles": ["Bottom","Top"],
+		"roles": [
+			"Bottom",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Veigar",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Velkoz",
-		"roles": ["Mid","Support"],
+		"roles": [
+			"Mid",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Vi",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Viktor",
-		"roles": ["Mid","Top"],
+		"roles": [
+			"Mid",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Vladimir",
-		"roles": ["Top","Mid"],
+		"roles": [
+			"Top",
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Volibear",
-		"roles": ["Jungle","Top"],
+		"roles": [
+			"Jungle",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Warwick",
-		"roles": ["Jungle","Top"],
+		"roles": [
+			"Jungle",
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Xayah",
-		"roles": ["Bottom"],
+		"roles": [
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Xerath",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "XinZhao",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Yasuo",
-		"roles": ["Mid","Top","Bottom"],
+		"roles": [
+			"Mid",
+			"Top",
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Yorick",
-		"roles": ["Top"],
+		"roles": [
+			"Top"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Yuumi",
-		"roles": ["Support"],
+		"roles": [
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Zac",
-		"roles": ["Jungle"],
+		"roles": [
+			"Jungle"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Zed",
-		"roles": ["Mid"],
+		"roles": [
+			"Mid"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Ziggs",
-		"roles": ["Mid","Bottom"],
+		"roles": [
+			"Mid",
+			"Bottom"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Zilean",
-		"roles": ["Mid","Support"],
+		"roles": [
+			"Mid",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Zoe",
-		"roles": ["Mid","Support"],
+		"roles": [
+			"Mid",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	},
 	{
 		"name": "Zyra",
-		"roles": ["Mid","Support"],
+		"roles": [
+			"Mid",
+			"Support"
+		],
 		"priorities": [],
 		"priorityBonus": 0
 	}

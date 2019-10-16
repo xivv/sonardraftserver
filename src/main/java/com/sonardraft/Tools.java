@@ -20,7 +20,9 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.EnumSet;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.imageio.ImageIO;
 
@@ -30,6 +32,7 @@ import org.opencv.core.Mat;
 
 import com.sonardraft.db.Character;
 import com.sonardraft.db.Draft;
+import com.sonardraft.db.Role;
 import com.sun.jna.platform.WindowUtils;
 
 public class Tools {
@@ -154,7 +157,62 @@ public class Tools {
 		draft.getRed().getCombos().remove(findByName(draft.getRed().getCombos(), "None"));
 		draft.getRed().getCombos().remove(findByName(draft.getRed().getCombos(), "Picking"));
 
+		// Filter combos for roles
+
+		draft.getBlue().setOpenRoles(remainingRoles(filterPickedRoles(draft.getBlue().getPicks())));
+		draft.getRed().setOpenRoles(remainingRoles(filterPickedRoles(draft.getRed().getPicks())));
+		draft.getBlue()
+				.setCombos(filterRoles(draft.getBlue().getCombos(), filterPickedRoles(draft.getBlue().getPicks())));
+
+		draft.getRed().setCombos(filterRoles(draft.getRed().getCombos(), filterPickedRoles(draft.getRed().getPicks())));
+
 		return draft;
+	}
+
+	private static List<Role> filterPickedRoles(List<Character> picks) {
+
+		List<Role> filter = new ArrayList<>();
+
+		for (Character character : picks) {
+
+			if (character.getRoles().size() == 1 && !filter.contains(character.getRoles().get(0))) {
+				filter.add(character.getRoles().get(0));
+			} else if (character.getRoles().size() == 2) {
+
+				if (!filter.contains(character.getRoles().get(0)) && !filter.contains(character.getRoles().get(1))) {
+
+					for (Character c : picks) {
+
+						if (!c.equals(character) && c.getRoles().size() == 2
+								&& c.getRoles().containsAll(character.getRoles())) {
+							filter.addAll(character.getRoles());
+						}
+					}
+
+				}
+			}
+		}
+
+		return filter;
+	}
+
+	private static List<Role> remainingRoles(List<Role> roles) {
+		List<Role> remainingRoles = new ArrayList<>(EnumSet.allOf(Role.class));
+		remainingRoles.removeAll(roles);
+		return remainingRoles;
+	}
+
+	private static List<Character> filterRoles(List<Character> combos, List<Role> roles) {
+
+		List<Character> filtered = new ArrayList<>();
+
+		for (Role role : remainingRoles(roles)) {
+			filtered.addAll(combos.stream()
+					.filter(character -> character.getRoles().contains(role) && !filtered.contains(character))
+					.collect(Collectors.toList()));
+		}
+
+		return filtered;
 	}
 
 	public static List<Mat> takeScreenshots(boolean saveResult) {

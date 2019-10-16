@@ -1,6 +1,7 @@
 package com.sonardraft;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
@@ -50,6 +51,25 @@ public class Variables {
 	 */
 	public static List<Character> characters = new ArrayList<>();
 
+	public static void createFreshConfiguration() throws IOException {
+
+		BASE = System.getProperty("user.dir") + "\\";
+		for (File character : new File(Variables.CHARACTERPATH).listFiles()) {
+
+			if (!character.isDirectory()) {
+				Variables.characters.add(new Character(FilenameUtils.getBaseName(character.getName())));
+			}
+		}
+
+		String freshConfiguration = new Gson().toJson(characters);
+		FileOutputStream outputStream = new FileOutputStream(BASE + "priorities.original.json");
+		byte[] strToBytes = freshConfiguration.getBytes();
+		outputStream.write(strToBytes);
+
+		outputStream.close();
+
+	}
+
 	public static void init() {
 
 		BASE = System.getProperty("user.dir") + "\\";
@@ -77,7 +97,7 @@ public class Variables {
 		}
 
 		try {
-			URL priorityUrl = Resources.getResource("priorities.json");
+			URL priorityUrl = Resources.getResource("priorities.original.json");
 			String priorityProperties = Resources.toString(priorityUrl, Charsets.UTF_8);
 			List<Character> characterPriorities = new Gson().fromJson(priorityProperties,
 					new TypeToken<List<Character>>() {
@@ -88,6 +108,7 @@ public class Variables {
 
 				if (foundCharacter != null) {
 					foundCharacter.setPriorities(character.getPriorities());
+					foundCharacter.setRoles(character.getRoles());
 				} else {
 					System.err
 							.println("Character with name " + character.getName() + " doesnt exist in image directory");
