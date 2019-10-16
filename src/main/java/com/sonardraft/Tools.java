@@ -190,6 +190,8 @@ public class Tools {
 					}
 
 				}
+			} else if (character.getRoles().size() == 3) {
+
 			}
 		}
 
