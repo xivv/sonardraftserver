@@ -718,7 +718,12 @@
 		"roles": [
 			"Mid"
 		],
-		"priorities": [],
+		"priorities": [
+			{
+				"name": "Rakan",
+				"priorityBonus": 50
+			}
+		],
 		"priorityBonus": 0
 	},
 	{
@@ -1151,7 +1156,12 @@
 		"roles": [
 			"Bottom"
 		],
-		"priorities": [],
+		"priorities": [
+			{
+				"name": "Rakan",
+				"priorityBonus": 100
+			}
+		],
 		"priorityBonus": 0
 	},
 	{

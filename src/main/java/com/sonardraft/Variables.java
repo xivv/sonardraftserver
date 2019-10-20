@@ -35,11 +35,6 @@ public class Variables {
 	public static Screensize resolution;
 
 	/*
-	 * Performance
-	 */
-	public static final int SCREENSHOTINTERVALL = 500;
-
-	/*
 	 * Quality
 	 */
 	protected static final int[] HISTOGRAMMSIZE = { 64, 64, 64 };
@@ -70,19 +65,7 @@ public class Variables {
 
 	}
 
-	public static void init() {
-
-		BASE = System.getProperty("user.dir") + "\\";
-
-//		Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
-//
-//		if (screensize.width == 1920 && screensize.height == 1080) {
-//			resolution = Screensize.x1920x1080;
-//		} else if (screensize.width == 1024 && screensize.height == 768) {
-//			resolution = Screensize.x1024x768;
-//		}
-
-		// Get configured character combo properties
+	public static boolean initialiseCharacters() {
 
 		Tools.clearFolder(new File(Variables.RESULTPATH));
 		Tools.resizeImages(Variables.CHARACTERPATH, 64);
@@ -117,8 +100,27 @@ public class Variables {
 
 		} catch (IOException e) {
 			e.printStackTrace();
+			return false;
 		}
+		return true;
+	}
 
+	public static boolean init() {
+
+		BASE = System.getProperty("user.dir") + "\\";
+
+//		Dimension screensize = Toolkit.getDefaultToolkit().getScreenSize();
+//
+//		if (screensize.width == 1920 && screensize.height == 1080) {
+//			resolution = Screensize.x1920x1080;
+//		} else if (screensize.width == 1024 && screensize.height == 768) {
+//			resolution = Screensize.x1024x768;
+//		}
+
+		// Get configured character combo properties
+		initialiseCharacters();
+
+		return true;
 	}
 
 }

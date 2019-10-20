@@ -3,6 +3,7 @@ type Query {
 	isAlive: Boolean
 	isClientRunning: Boolean
 	toggleClientRunning: Boolean
+	reloadConfiguration: Boolean
 }
 
 type Draft {

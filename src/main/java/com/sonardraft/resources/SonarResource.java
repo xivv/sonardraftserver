@@ -53,6 +53,8 @@ public class SonarResource {
 				.type(newTypeWiring("Query").dataFetcher("isClientRunning", graphQLDataFetchers.isClientRunning()))
 				.type(newTypeWiring("Query").dataFetcher("toggleClientRunning",
 						graphQLDataFetchers.toggleClientRunning()))
+				.type(newTypeWiring("Query").dataFetcher("reloadConfiguration",
+						graphQLDataFetchers.reloadConfiguration()))
 				.build();
 	}
 

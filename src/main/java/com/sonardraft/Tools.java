@@ -6,7 +6,6 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Robot;
 import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferByte;
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -20,6 +19,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
+import java.util.EnumMap;
 import java.util.EnumSet;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -27,8 +27,9 @@ import java.util.stream.Collectors;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FilenameUtils;
-import org.opencv.core.CvType;
 import org.opencv.core.Mat;
+import org.opencv.core.MatOfByte;
+import org.opencv.imgcodecs.Imgcodecs;
 
 import com.sonardraft.db.Character;
 import com.sonardraft.db.Draft;
@@ -43,45 +44,28 @@ public class Tools {
 
 	public static boolean clientRunning = false;
 	public static boolean programmRunning = true;
-	public static Draft draft = new Draft();
 
-	public static void start() {
+	public static Draft getDraft() {
 
-		while (programmRunning) {
+		List<Mat> screenshots = Tools.takeScreenshots(false);
+		Draft draft = new Draft();
 
-			System.out.println("Waiting for League of Legends to start...");
-			while (clientRunning) {
+		int counter = 0;
 
-				List<Mat> screenshots = Tools.takeScreenshots(true);
+		for (Mat mat : screenshots) {
 
-				int counter = 0;
-				draft.getRed().getPicks().clear();
-				draft.getBlue().getPicks().clear();
+			Character character = TemplateRecognition.featureMatchingSimple(mat);
 
-				for (Mat mat : screenshots) {
-
-					Character character = TemplateRecognition.featureMatchingSimple(mat);
-
-					if (counter > 4) {
-						draft.getRed().getPicks().add(character);
-					} else if (counter < 5) {
-						draft.getBlue().getPicks().add(character);
-					}
-
-					counter++;
-				}
-
-				System.out.println(draft.getBlue().toString());
-				System.out.println(draft.getRed().toString());
-
-				try {
-					Thread.sleep(Variables.SCREENSHOTINTERVALL);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-
+			if (counter > 4) {
+				draft.getRed().getPicks().add(character);
+			} else if (counter < 5) {
+				draft.getBlue().getPicks().add(character);
 			}
+
+			counter++;
 		}
+
+		return draft;
 	}
 
 	public static Draft getPriorityDraft(Draft draft) {
@@ -146,10 +130,6 @@ public class Tools {
 			}
 		}
 
-		// Order by priority
-		Collections.sort(draft.getBlue().getCombos(), (o1, o2) -> o2.getPriority().compareTo(o1.getPriority()));
-		Collections.sort(draft.getRed().getCombos(), (o1, o2) -> o2.getPriority().compareTo(o1.getPriority()));
-
 		// Filter None and Picking
 		draft.getBlue().getCombos().remove(findByName(draft.getBlue().getCombos(), "None"));
 		draft.getBlue().getCombos().remove(findByName(draft.getBlue().getCombos(), "Picking"));
@@ -166,36 +146,80 @@ public class Tools {
 
 		draft.getRed().setCombos(filterRoles(draft.getRed().getCombos(), filterPickedRoles(draft.getRed().getPicks())));
 
+		// Order by priority
+		Collections.sort(draft.getBlue().getCombos(), (o1, o2) -> o2.getPriority().compareTo(o1.getPriority()));
+		Collections.sort(draft.getRed().getCombos(), (o1, o2) -> o2.getPriority().compareTo(o1.getPriority()));
+
+		Variables.initialiseCharacters();
 		return draft;
 	}
 
 	private static List<Role> filterPickedRoles(List<Character> picks) {
 
-		List<Role> filter = new ArrayList<>();
+		List<Role> remainingRoles = new ArrayList<>();
+		EnumMap<Role, Integer> availableRoles = new EnumMap<>(Role.class);
+		getAvailableRoles(availableRoles, picks);
 
-		for (Character character : picks) {
+		// If the remaining roles equal the characters which means that all roles have
+		// to be taken
+		if (availableRoles.size() == picks.size()) {
+			remainingRoles.addAll(availableRoles.keySet());
+		} else {
+			int iterations = 0;
+			while (iterations < 10) {
+				for (Character character : picks) {
 
-			if (character.getRoles().size() == 1 && !filter.contains(character.getRoles().get(0))) {
-				filter.add(character.getRoles().get(0));
-			} else if (character.getRoles().size() == 2) {
+					if (!character.getRoles().isEmpty()) {
 
-				if (!filter.contains(character.getRoles().get(0)) && !filter.contains(character.getRoles().get(1))) {
-
-					for (Character c : picks) {
-
-						if (!c.equals(character) && c.getRoles().size() == 2
-								&& c.getRoles().containsAll(character.getRoles())) {
-							filter.addAll(character.getRoles());
+						if (character.getRoles().size() == 1
+								|| getSameRoles(character, picks).size() == picks.size() - 1) {
+							remainingRoles.addAll(character.getRoles());
+							removeRoles(character.getRoles(), picks);
 						}
 					}
-
 				}
-			} else if (character.getRoles().size() == 3) {
+				iterations++;
+			}
 
+		}
+
+		return remainingRoles;
+	}
+
+	private static List<Character> getSameRoles(Character character, List<Character> characters) {
+
+		List<Character> foundCharacters = new ArrayList<>();
+
+		for (Character c : characters) {
+			if (c.getRoles().size() == character.getRoles().size() && character.getRoles().containsAll(c.getRoles())) {
+				foundCharacters.add(c);
 			}
 		}
 
-		return filter;
+		return foundCharacters;
+	}
+
+	private static void getAvailableRoles(EnumMap<Role, Integer> availableRoles, List<Character> characters) {
+
+		for (Character character : characters) {
+
+			for (Role role : character.getRoles()) {
+
+				if (!availableRoles.containsKey(role)) {
+					availableRoles.put(role, 0);
+				}
+
+				availableRoles.put(role, availableRoles.get(role) + 1);
+			}
+		}
+
+	}
+
+	private static void removeRoles(List<Role> roles, List<Character> characters) {
+
+		for (Character character : characters) {
+			character.getRoles().removeAll(roles);
+		}
 	}
 
 	private static List<Role> remainingRoles(List<Role> roles) {
@@ -221,46 +245,48 @@ public class Tools {
 
 		List<Mat> result = new ArrayList<>();
 
-		WindowUtils.getAllWindows(true).forEach(desktopWindow -> {
+		if (isClientRunning()) {
 
-			if (desktopWindow.getTitle().equals("League of Legends")) {
+			WindowUtils.getAllWindows(true).forEach(desktopWindow -> {
 
-				// CHAR 1
-				// 50x100 - 70x70 - 100
-				try {
-					Robot robot = new Robot();
-					for (var a = 0; a < 2; a++) {
+				if (desktopWindow.getTitle().equals("League of Legends")) {
 
-						Point base = new Point();
+					// CHAR 1
+					// 50x100 - 70x70 - 100
+					try {
+						Robot robot = new Robot();
+						for (var a = 0; a < 2; a++) {
 
-						if (a == 0) {
-							base = new Point(desktopWindow.getLocAndSize().x + 10,
-									desktopWindow.getLocAndSize().y + 100);
-						} else if (a == 1) {
-							base = new Point(desktopWindow.getLocAndSize().x + 1195,
-									desktopWindow.getLocAndSize().y + 100);
-						}
+							Point base = new Point();
 
-						for (var i = 0; i < 5; i++) {
+							if (a == 0) {
+								base = new Point(desktopWindow.getLocAndSize().x + 10,
+										desktopWindow.getLocAndSize().y + 100);
+							} else if (a == 1) {
+								base = new Point(desktopWindow.getLocAndSize().x + 1195,
+										desktopWindow.getLocAndSize().y + 100);
+							}
 
-							Rectangle rect = new Rectangle(base.x, base.y + i * 80, 110 - (a == 1 ? 40 : 0), 70);
+							for (var i = 0; i < 5; i++) {
 
-							BufferedImage image = robot.createScreenCapture(rect);
+								Rectangle rect = new Rectangle(base.x, base.y + i * 80, 110 - (a == 1 ? 40 : 0), 70);
 
-							// Convert image to mat so we dont need to save it for performance
-							result.add(bufferedImageToMat(image));
+								BufferedImage image = robot.createScreenCapture(rect);
 
-							if (saveResult) {
-								saveBufferedImage(image, Variables.SCREENPATH + a + i + ".png");
+								// Convert image to mat so we dont need to save it for performance
+								result.add(BufferedImage2Mat(image));
+
+								if (saveResult) {
+									saveBufferedImage(image, Variables.SCREENPATH + a + i + ".png");
+								}
 							}
 						}
+					} catch (Exception e) {
+						e.printStackTrace();
 					}
-				} catch (Exception e) {
-					e.printStackTrace();
 				}
-			}
-		});
-
+			});
+		}
 		return result;
 	}
 
@@ -339,7 +365,7 @@ public class Tools {
 
 	}
 
-	public static void isClientRunning() {
+	public static boolean isClientRunning() {
 		try {
 			Runtime runtime = Runtime.getRuntime();
 			String cmds[] = { "cmd", "/c", "tasklist" };
@@ -353,26 +379,19 @@ public class Tools {
 				result += line;
 			}
 
-			if (result.contains("LeagueClient.exe")) {
-				clientRunning = true;
-				Thread.sleep(5000);
-			} else {
-				clientRunning = false;
-				Thread.sleep(2000);
-			}
-
+			return result.contains("LeagueClient.exe");
 		} catch (Exception ex) {
 			ex.printStackTrace();
 			System.out.println("Cannot query the tasklist for some reason.");
+			return false;
 		}
-
 	}
 
-	public static Mat bufferedImageToMat(BufferedImage bi) {
-		Mat mat = new Mat(bi.getHeight(), bi.getWidth(), CvType.CV_8UC3);
-		byte[] data = ((DataBufferByte) bi.getRaster().getDataBuffer()).getData();
-		mat.put(0, 0, data);
-		return mat;
+	public static Mat BufferedImage2Mat(BufferedImage image) throws IOException {
+		ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+		ImageIO.write(image, "jpg", byteArrayOutputStream);
+		byteArrayOutputStream.flush();
+		return Imgcodecs.imdecode(new MatOfByte(byteArrayOutputStream.toByteArray()), Imgcodecs.IMREAD_UNCHANGED);
 	}
 
 	public static ByteBuffer convertImageData(BufferedImage bi) {
@@ -381,7 +400,7 @@ public class Tools {
 			ImageIO.write(bi, "png", out);
 			return ByteBuffer.wrap(out.toByteArray());
 		} catch (IOException ex) {
-			// TODO
+			ex.printStackTrace();
 		}
 		return null;
 	}
