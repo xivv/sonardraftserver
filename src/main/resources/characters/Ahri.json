@@ -1,0 +1,15 @@
+{
+    "name": "Ahri",
+    "roles": [
+        "Mid"
+    ],
+    "features": [
+        "HARDCC",
+        "ASSASINATION",
+        "POKE",
+        "WAVECLEAR",
+        "ROAM"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

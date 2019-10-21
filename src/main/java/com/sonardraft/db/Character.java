@@ -90,19 +90,11 @@ public class Character {
 		this.priorityBonus = priorityBonus;
 	}
 
-	public Character clone() {
+	public Character(Character character) {
 
-		Character newCharacter = new Character();
-
-		newCharacter.setPriorityBonus(this.priorityBonus);
-		newCharacter.setName(this.name);
-		newCharacter.setRoles(this.roles);
-
-		for (Role role : this.roles) {
-
-		}
-
-		return newCharacter;
+		this.setPriorityBonus(character.priorityBonus);
+		this.setName(character.name);
+		this.setRoles(character.roles);
 	}
 
 	public Integer getPriority() {

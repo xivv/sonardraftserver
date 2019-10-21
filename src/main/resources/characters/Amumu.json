@@ -1,0 +1,14 @@
+{
+    "name": "Name",
+    "roles": [
+
+    ],
+    "features": [
+        "HARDCC",
+        "HARDENGAGE",
+        "TANK"
+    ],
+    "priorities": [],
+
+    "priorityBonus": 0
+}

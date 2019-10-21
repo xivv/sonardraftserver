@@ -1,0 +1,13 @@
+{
+    "name": "Braum",
+    "roles": [
+        "Support"
+    ],
+    "features": [
+        "HARDCC",
+        "SUSTAIN",
+        "TANK"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

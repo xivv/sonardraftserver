@@ -1,0 +1,14 @@
+{
+    "name": "Anivia",
+    "roles": [
+        "Mid",
+        "Top"
+    ],
+    "features": [
+        "CC",
+        "HARDCC",
+        "WAVECLEAR"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

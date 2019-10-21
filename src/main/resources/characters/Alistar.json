@@ -1,0 +1,17 @@
+{
+    "name": "Alistar",
+    "roles": [
+        "Support"
+    ],
+    "features": [
+        "CC",
+        "HARDCC",
+        "HARDENGAGE",
+        "ROAM",
+        "SUSTAIN",
+        "TANK"
+    ],
+    "priorities": [],
+
+    "priorityBonus": 0
+}

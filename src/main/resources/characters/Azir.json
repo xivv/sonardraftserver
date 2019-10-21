@@ -1,0 +1,15 @@
+{
+    "name": "Azir",
+    "roles": [
+        "Mid",
+        "Top"
+    ],
+    "features": [
+        "CC",
+        "ENGAGE",
+        "POKE",
+        "WAVECLEAR"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

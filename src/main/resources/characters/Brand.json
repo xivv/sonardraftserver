@@ -1,0 +1,14 @@
+{
+    "name": "Brand",
+    "roles": [
+        "Support",
+        "Mid"
+    ],
+    "features": [
+        "HARDCC",
+        "POKE",
+        "WAVECLEAR"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

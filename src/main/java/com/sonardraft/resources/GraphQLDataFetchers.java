@@ -44,7 +44,7 @@ public class GraphQLDataFetchers {
 		};
 	}
 
-	private Draft getDemoData() {
+	public Draft getDemoData() {
 
 		Draft draft = new Draft();
 		Character annie = Tools.findByName(Variables.characters, "Annie");
@@ -58,7 +58,6 @@ public class GraphQLDataFetchers {
 		Character brand = Tools.findByName(Variables.characters, "Brand");
 		Character gragas = Tools.findByName(Variables.characters, "Gragas");
 		Character none = Tools.findByName(Variables.characters, "None");
-		Character picking = Tools.findByName(Variables.characters, "Picking");
 		Character nocturne = Tools.findByName(Variables.characters, "Nocturne");
 
 		Character jarvan = Tools.findByName(Variables.characters, "JarvanIV");

@@ -1,123 +1,4 @@
-[
-	{
-		"name": "Aatrox",
-		"roles": [
-			"Top",
-			"Jungle"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Ahri",
-		"roles": [
-			"Mid"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Akali",
-		"roles": [
-			"Mid",
-			"Top"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Alistar",
-		"roles": [
-			"Support"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Amumu",
-		"roles": [
-			"Jungle"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Anivia",
-		"roles": [
-			"Mid",
-			"Top"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Annie",
-		"roles": [
-			"Mid",
-			"Support"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Ashe",
-		"roles": [
-			"Bottom"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "AurelionSol",
-		"roles": [
-			"Mid"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Azir",
-		"roles": [
-			"Mid",
-			"Top"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Bard",
-		"roles": [
-			"Support"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Blitzcrank",
-		"roles": [
-			"Support"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Brand",
-		"roles": [
-			"Support",
-			"Mid"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
-		"name": "Braum",
-		"roles": [
-			"Support"
-		],
-		"priorities": [],
-		"priorityBonus": 0
-	},
-	{
+[{
 		"name": "Caitlyn",
 		"roles": [
 			"Bottom"
@@ -718,12 +599,10 @@
 		"roles": [
 			"Mid"
 		],
-		"priorities": [
-			{
-				"name": "Rakan",
-				"priorityBonus": 50
-			}
-		],
+		"priorities": [{
+			"name": "Rakan",
+			"priorityBonus": 50
+		}],
 		"priorityBonus": 0
 	},
 	{
@@ -1156,12 +1035,10 @@
 		"roles": [
 			"Bottom"
 		],
-		"priorities": [
-			{
-				"name": "Rakan",
-				"priorityBonus": 100
-			}
-		],
+		"priorities": [{
+			"name": "Rakan",
+			"priorityBonus": 100
+		}],
 		"priorityBonus": 0
 	},
 	{

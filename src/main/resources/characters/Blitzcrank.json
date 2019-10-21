@@ -1,0 +1,13 @@
+{
+    "name": "Blitzcrank",
+    "roles": [
+        "Support"
+    ],
+    "features": [
+        "CC",
+        "HARDCC",
+        "ROAM"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

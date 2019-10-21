@@ -1,0 +1,14 @@
+{
+    "name": "Akali",
+    "roles": [
+        "Mid",
+        "Top"
+    ],
+    "features": [
+        "DUELLANT",
+        "ROAM",
+        "ASSASINATION"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

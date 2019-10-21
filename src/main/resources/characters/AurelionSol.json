@@ -1,0 +1,15 @@
+{
+	"name": "AurelionSol",
+	"roles": [
+		"Mid"
+	],
+	"features": [
+		"HARDCC",
+		"HARDENGAGE",
+		"POKE",
+		"WAVECLEAR",
+		"ROAM"
+	],
+	"priorities": [],
+	"priorityBonus": 0
+}

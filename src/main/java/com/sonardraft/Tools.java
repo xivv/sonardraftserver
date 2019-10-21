@@ -43,7 +43,7 @@ public class Tools {
 	}
 
 	public static boolean clientRunning = false;
-	public static boolean programmRunning = true;
+	public static final boolean programmRunning = true;
 
 	public static Draft getDraft() {
 
@@ -168,14 +168,10 @@ public class Tools {
 			int iterations = 0;
 			while (iterations < 10) {
 				for (Character character : picks) {
-
-					if (!character.getRoles().isEmpty()) {
-
-						if (character.getRoles().size() == 1
-								|| getSameRoles(character, picks).size() == picks.size() - 1) {
-							remainingRoles.addAll(character.getRoles());
-							removeRoles(character.getRoles(), picks);
-						}
+					if (!character.getRoles().isEmpty() && character.getRoles().size() == 1
+							|| getSameRoles(character, picks).size() == picks.size() - 1) {
+						remainingRoles.addAll(character.getRoles());
+						removeRoles(character.getRoles(), picks);
 					}
 				}
 				iterations++;
@@ -184,6 +180,7 @@ public class Tools {
 		}
 
 		return remainingRoles;
+
 	}
 
 	private static List<Character> getSameRoles(Character character, List<Character> characters) {
@@ -368,7 +365,7 @@ public class Tools {
 	public static boolean isClientRunning() {
 		try {
 			Runtime runtime = Runtime.getRuntime();
-			String cmds[] = { "cmd", "/c", "tasklist" };
+			String[] cmds = { "cmd", "/c", "tasklist" };
 			Process proc = runtime.exec(cmds);
 			InputStream inputstream = proc.getInputStream();
 			InputStreamReader inputstreamreader = new InputStreamReader(inputstream);
@@ -382,7 +379,6 @@ public class Tools {
 			return result.contains("LeagueClient.exe");
 		} catch (Exception ex) {
 			ex.printStackTrace();
-			System.out.println("Cannot query the tasklist for some reason.");
 			return false;
 		}
 	}
@@ -414,7 +410,7 @@ public class Tools {
 		List<Character> clone = new ArrayList<>();
 
 		for (Character character : characters) {
-			clone.add(character.clone());
+			clone.add(new Character(character));
 		}
 
 		return clone;

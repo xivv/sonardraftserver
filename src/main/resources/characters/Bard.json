@@ -1,0 +1,15 @@
+{
+	"name": "Bard",
+	"roles": [
+		"Support"
+	],
+	"features": [
+		"CC",
+		"HARDCC",
+		"ENGAGE",
+		"HARDENGAGE",
+		"ROAM"
+	],
+	"priorities": [],
+	"priorityBonus": 0
+}

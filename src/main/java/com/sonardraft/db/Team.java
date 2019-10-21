@@ -25,18 +25,6 @@ public class Team {
 		setOpenRoles(new ArrayList<>());
 	}
 
-	@Override
-	public String toString() {
-
-		String result = "Team picks" + "\n";
-
-		for (Character character : picks) {
-			result += character.getName() + "\n";
-		}
-
-		return result;
-	}
-
 	public List<Character> getPicks() {
 		return picks;
 	}

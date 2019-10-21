@@ -1,0 +1,16 @@
+{
+	"name": "Aatrox",
+	"roles": [
+		"Top",
+		"Jungle"
+	],
+	"features": [
+		"CC",
+		"ENGAGE",
+		"WAVECLEAR",
+		"DUELLANT",
+		"SUSTAIN"
+	],
+	"priorities": [],
+	"priorityBonus": 0
+}

@@ -4,10 +4,10 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.commons.io.Charsets;
 import org.apache.commons.io.FilenameUtils;
 import org.opencv.core.Mat;
 import org.opencv.imgcodecs.Imgcodecs;
@@ -46,6 +46,9 @@ public class Variables {
 	 */
 	public static List<Character> characters = new ArrayList<>();
 
+	private Variables() {
+	}
+
 	public static void createFreshConfiguration() throws IOException {
 
 		BASE = System.getProperty("user.dir") + "\\";
@@ -57,12 +60,10 @@ public class Variables {
 		}
 
 		String freshConfiguration = new Gson().toJson(characters);
-		FileOutputStream outputStream = new FileOutputStream(BASE + "priorities.original.json");
-		byte[] strToBytes = freshConfiguration.getBytes();
-		outputStream.write(strToBytes);
-
-		outputStream.close();
-
+		try (FileOutputStream outputStream = new FileOutputStream(BASE + "priorities.original.json")) {
+			byte[] strToBytes = freshConfiguration.getBytes();
+			outputStream.write(strToBytes);
+		}
 	}
 
 	public static boolean initialiseCharacters() {
@@ -81,7 +82,7 @@ public class Variables {
 
 		try {
 			URL priorityUrl = Resources.getResource("priorities.original.json");
-			String priorityProperties = Resources.toString(priorityUrl, Charsets.UTF_8);
+			String priorityProperties = Resources.toString(priorityUrl, StandardCharsets.UTF_8);
 			List<Character> characterPriorities = new Gson().fromJson(priorityProperties,
 					new TypeToken<List<Character>>() {
 					}.getType());

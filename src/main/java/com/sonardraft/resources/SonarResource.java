@@ -4,10 +4,10 @@ import static graphql.schema.idl.TypeRuntimeWiring.newTypeWiring;
 
 import java.io.IOException;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 import javax.annotation.PostConstruct;
 
-import org.apache.commons.io.Charsets;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -33,7 +33,7 @@ public class SonarResource {
 	public void init() throws IOException {
 
 		URL url = Resources.getResource("schema.graphqls");
-		String sdl = Resources.toString(url, Charsets.UTF_8);
+		String sdl = Resources.toString(url, StandardCharsets.UTF_8);
 		GraphQLSchema graphQLSchema = buildSchema(sdl);
 		this.graphQL = GraphQL.newGraphQL(graphQLSchema).build();
 
