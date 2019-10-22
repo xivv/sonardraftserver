@@ -1,1 +1,6 @@
-{"name":"Jax","roles":["Jungle","Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Jax",
+    "roles": ["Jungle", "Top"],
+    "features": ["HARDCC", "ENGAGE", "HARDENGAGE", "DUELLANT", "TANK"],
+    "priorities": []
+}

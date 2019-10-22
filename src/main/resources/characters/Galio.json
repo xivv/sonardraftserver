@@ -1,1 +1,6 @@
-{"name":"Galio","roles":["Support","Mid"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Galio",
+    "roles": ["Support", "Mid"],
+    "features": ["HARDCC", "HARDENGAGE", "WAVECLEAR", "TANK"],
+    "priorities": []
+}

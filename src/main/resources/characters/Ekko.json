@@ -1,1 +1,6 @@
-{"name":"Ekko","roles":["Top","Jungle","Mid"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Ekko",
+    "roles": ["Top", "Jungle", "Mid"],
+    "features": ["CC", "HARDCC", "ENGAGE", "HARDENGAGE", "DUELLANT", "ROAM", "ASSASINATION"],
+    "priorities": []
+}

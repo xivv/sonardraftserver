@@ -1,1 +1,6 @@
-{"name":"Fizz","roles":["Jungle","Mid"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Fizz",
+    "roles": ["Jungle", "Mid"],
+    "features": ["CC", "ENGAGE", "HARDENGAGE", "ROAM", "ASSASINATION"],
+    "priorities": []
+}

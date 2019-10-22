@@ -1,1 +1,6 @@
-{"name":"Illaoi","roles":["Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Illaoi",
+    "roles": ["Top"],
+    "features": ["WAVECLEAR", "DUELLANT", "TANK"],
+    "priorities": []
+}

@@ -1,1 +1,6 @@
-{"name":"Fiddlesticks","roles":["Jungle","Support"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Fiddlesticks",
+    "roles": ["Jungle", "Support"],
+    "features": ["CC", "HARDCC", "HARDENGAGE", "POKE"],
+    "priorities": []
+}

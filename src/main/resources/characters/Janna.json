@@ -1,1 +1,6 @@
-{"name":"Janna","roles":["Support"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Janna",
+    "roles": ["Support"],
+    "features": ["CC", "HARDCC", "ROAM", "SUSTAIN"],
+    "priorities": []
+}
