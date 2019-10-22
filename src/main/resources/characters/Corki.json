@@ -1,0 +1,15 @@
+{
+    "name": "Corki",
+    "roles": [
+        "Mid",
+        "Bottom"
+    ],
+    "features": [
+        "ENGAGE",
+        "POKE",
+        "WAVECLEAR",
+        "ROAM"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

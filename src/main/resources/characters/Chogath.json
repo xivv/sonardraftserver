@@ -1,0 +1,17 @@
+{
+    "name": "Chogath",
+    "roles": [
+        "Top",
+        "Jungle"
+    ],
+    "features": [
+        "CC",
+        "HARDCC",
+        "HARDENGAGE",
+        "SPLITPUSH",
+        "WAVECLEAR",
+        "TANK"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

@@ -1,0 +1,12 @@
+        "CC", Root, Slow, Silence; Everything that doesnt stop a character from acting
+        "HARDCC", Stun; Prevents character from pressing keys,hooks, cancels kata ultimate
+        "ENGAGE", Gap closer or ability that can start a fight without cc
+        "HARDENGAGE", Gap closer or ability that can start a fight with cc
+        "POKE", lux, ez, velkoz, high ranged abilities
+        "SPLITPUSH", characters that dont need teleport (shen) or characters that destroy towers very easily and clear minion waves very good
+        "WAVECLEAR", anivia; characters that excel in preventing sieging
+        "DUELLANT", fiora, riven; characters that can 2vs1 
+        "ROAM", high mobility like pyke, annie,
+        "SUSTAIN", heal or shields for the TEAM
+        "ASSASINATION", fast kill fast disengange
+        "TANK", unkillable

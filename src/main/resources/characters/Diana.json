@@ -1,0 +1,14 @@
+{
+    "name": "Diana",
+    "roles": [
+        "Mid",
+        "Jungle"
+    ],
+    "features": [
+        "CC",
+        "ENGAGE",
+        "ASSASINATION"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

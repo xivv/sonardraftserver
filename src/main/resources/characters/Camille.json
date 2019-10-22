@@ -1,0 +1,17 @@
+{
+    "name": "Camille",
+    "roles": [
+        "Jungle",
+        "Top"
+    ],
+    "features": [
+        "CC",
+        "HARDCC",
+        "ENGAGE",
+        "HARDENGAGE",
+        "WAVECLEAR",
+        "DUELLANT"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

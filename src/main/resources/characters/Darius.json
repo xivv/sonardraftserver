@@ -1,0 +1,14 @@
+{
+    "name": "Darius",
+    "roles": [
+        "Top"
+    ],
+    "features": [
+        "HARDCC",
+        "WAVECLEAR",
+        "DUELLANT",
+        "TANK"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}

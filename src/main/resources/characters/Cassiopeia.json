@@ -1,0 +1,14 @@
+{
+    "name": "Cassiopeia",
+    "roles": [
+        "Mid",
+        "Bottom"
+    ],
+    "features": [
+        "CC",
+        "HARDCC",
+        "DUELLANT"
+    ],
+    "priorities": [],
+    "priorityBonus": 0
+}
