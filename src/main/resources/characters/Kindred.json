@@ -1,1 +1,6 @@
-{"name":"Kindred","roles":["Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Kindred",
+    "roles": ["Jungle"],
+    "features": ["CC", "DUELLANT", "ROAM", "SUSTAIN"],
+    "priorities": []
+}

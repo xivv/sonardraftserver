@@ -1,1 +1,6 @@
-{"name":"Kayn","roles":["Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Kayn",
+    "roles": ["Jungle"],
+    "features": ["CC", "HARDCC", "ENGAGE", "HARDENGAGE", "ROAM", "ASSASINATION", "TANK"],
+    "priorities": []
+}

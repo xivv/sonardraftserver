@@ -1,1 +1,6 @@
-{"name":"Karma","roles":["Support","Mid","Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Karma",
+    "roles": ["Support", "Mid", "Top"],
+    "features": ["CC", "POKE", "SPLITPUSH", "SUSTAIN"],
+    "priorities": []
+}

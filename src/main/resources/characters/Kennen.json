@@ -1,1 +1,6 @@
-{"name":"Kennen","roles":["Bottom","Support","Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Kennen",
+    "roles": ["Bottom", "Support", "Top"],
+    "features": ["HARDCC", "HARDENGAGE"],
+    "priorities": []
+}

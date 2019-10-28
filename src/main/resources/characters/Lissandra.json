@@ -1,1 +1,6 @@
-{"name":"Lissandra","roles":["Mid","Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Lissandra",
+    "roles": ["Mid", "Top"],
+    "features": ["CC", "HARDCC", "ENGAGE", "HARDENGAGE", "WAVECLEAR", "ROAM"],
+    "priorities": []
+}

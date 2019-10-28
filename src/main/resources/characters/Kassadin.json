@@ -1,1 +1,6 @@
-{"name":"Kassadin","roles":["Mid"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Kassadin",
+    "roles": ["Mid"],
+    "features": ["CC", "ENGAGE", "DUELLANT", "ROAM"],
+    "priorities": []
+}
