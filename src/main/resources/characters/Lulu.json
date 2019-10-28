@@ -1,1 +1,6 @@
-{"name":"Lulu","roles":["Support","Mid"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Lulu",
+    "roles": ["Support", "Mid"],
+    "features": ["CC", "HARDCC", "POKE", "SUSTAIN"],
+    "priorities": []
+}

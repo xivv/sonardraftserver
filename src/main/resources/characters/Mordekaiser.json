@@ -1,1 +1,6 @@
-{"name":"Mordekaiser","roles":["Mid","Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Mordekaiser",
+    "roles": ["Mid", "Top"],
+    "features": ["DUELLANT"],
+    "priorities": []
+}

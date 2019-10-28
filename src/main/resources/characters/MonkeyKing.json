@@ -1,1 +1,6 @@
-{"name":"MonkeyKing","roles":["Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "MonkeyKing",
+    "roles": ["Jungle"],
+    "features": ["HARDCC", "ENGAGE", "HARDENGAGE", "ASSASINATION"],
+    "priorities": []
+}

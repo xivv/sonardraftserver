@@ -1,1 +1,6 @@
-{"name":"Malphite","roles":["Top","Mid","Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Malphite",
+    "roles": ["Top", "Mid", "Jungle"],
+    "features": ["CC", "HARDCC", "HARDENGAGE", "ASSASINATION", "TANK"],
+    "priorities": []
+}

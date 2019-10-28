@@ -1,1 +1,6 @@
-{"name":"Maokai","roles":["Jungle","Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Maokai",
+    "roles": ["Jungle", "Top"],
+    "features": ["CC", "HARDCC", "ENGAGE", "HARDENGAGE", "TANK"],
+    "priorities": []
+}
