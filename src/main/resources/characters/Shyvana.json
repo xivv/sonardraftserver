@@ -1,1 +1,6 @@
-{"name":"Shyvana","roles":["Top","Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Shyvana",
+    "roles": ["Top", "Jungle"],
+    "features": ["HARDCC", "HARDENGAGE", "POKE", "ROAM", "TANK"],
+    "priorities": []
+}

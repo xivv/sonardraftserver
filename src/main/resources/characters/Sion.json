@@ -1,1 +1,6 @@
-{"name":"Sion","roles":["Top","Support"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Sion",
+    "roles": ["Top", "Support"],
+    "features": ["CC", "HARDCC", "HARDENGAGE", "SPLITPUSH", "WAVECLEAR", "TANK"],
+    "priorities": []
+}

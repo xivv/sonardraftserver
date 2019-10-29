@@ -1,1 +1,6 @@
-{"name":"Ryze","roles":["Top","Mid"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Ryze",
+    "roles": ["Top", "Mid"],
+    "features": ["CC", "ENGAGE", "WAVECLEAR", "DUELLANT", "ROAM"],
+    "priorities": []
+}

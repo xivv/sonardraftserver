@@ -1,1 +1,6 @@
-{"name":"Riven","roles":["Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Riven",
+    "roles": ["Top"],
+    "features": ["HARDCC", "DUELLANT", "ASSASINATION"],
+    "priorities": []
+}

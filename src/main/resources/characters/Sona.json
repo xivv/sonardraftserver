@@ -1,1 +1,6 @@
-{"name":"Sona","roles":["Mid","Bottom","Support"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Sona",
+    "roles": ["Mid", "Bottom", "Support"],
+    "features": ["CC", "HARDCC", "POKE", "SUSTAIN"],
+    "priorities": []
+}

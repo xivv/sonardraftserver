@@ -1,1 +1,6 @@
-{"name":"Singed","roles":["Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Singed",
+    "roles": ["Top"],
+    "features": ["HARDCC", "ENGAGE", "HARDENGAGE", "DUELLANT", "ROAM", "TANK"],
+    "priorities": []
+}

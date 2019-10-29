@@ -1,1 +1,6 @@
-{"name":"Sivir","roles":["Bottom"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Sivir",
+    "roles": ["Bottom"],
+    "features": ["WAVECLEAR"],
+    "priorities": []
+}
