@@ -1,1 +1,6 @@
-{"name":"Olaf","roles":["Top","Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Olaf",
+    "roles": ["Top", "Jungle"],
+    "features": ["CC", "ENGAGE", "DUELLANT", "TANK"],
+    "priorities": []
+}

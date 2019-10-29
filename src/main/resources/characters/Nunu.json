@@ -1,1 +1,6 @@
-{"name":"Nunu","roles":["Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Nunu",
+    "roles": ["Jungle"],
+    "features": ["CC", "HARDENGAGE", "ROAM", "TANK"],
+    "priorities": []
+}

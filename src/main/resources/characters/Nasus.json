@@ -1,1 +1,6 @@
-{"name":"Nasus","roles":["Top","Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Nasus",
+    "roles": ["Top", "Jungle"],
+    "features": ["CC", "DUELLANT", "TANK"],
+    "priorities": []
+}

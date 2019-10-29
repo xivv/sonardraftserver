@@ -1,1 +1,13 @@
-{"name":"Orianna","roles":["Mid"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[{"name":"Rakan","roles":[],"features":[],"priorities":[],"priorityBonus":50,"priority":0}]}
+{
+    "name": "Orianna",
+    "roles": ["Mid"],
+    "features": ["CC", "HARDCC", "SUSTAIN"],
+    "priorities": [{
+        "name": "Rakan",
+        "roles": [],
+        "features": [],
+        "priorities": [],
+        "priorityBonus": 50,
+        "priority": 0
+    }]
+}

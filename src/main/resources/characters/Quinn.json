@@ -1,1 +1,6 @@
-{"name":"Quinn","roles":["Top","Bottom"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Quinn",
+    "roles": ["Top", "Bottom"],
+    "features": ["CC", "ENGAGE", "DUELLANT", "ROAM"],
+    "priorities": []
+}

@@ -1,1 +1,6 @@
-{"name":"Ornn","roles":["Top","Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Ornn",
+    "roles": ["Top", "Jungle"],
+    "features": ["CC", "HARDCC", "HARDENGAGE", "ROAM", "SUSTAIN", "TANK"],
+    "priorities": []
+}
