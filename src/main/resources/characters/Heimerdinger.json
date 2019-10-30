@@ -1,6 +1,6 @@
 {
     "name": "Heimerdinger",
-    "roles": ["Mid", "Bottom"],
+    "roles": ["Bottom"],
     "features": ["CC", "HARDCC", "POKE", "SPLITPUSH", "WAVECLEAR", "DUELLANT"],
     "priorities": []
 }

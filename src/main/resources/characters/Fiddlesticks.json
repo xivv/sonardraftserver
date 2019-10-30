@@ -1,6 +1,6 @@
 {
     "name": "Fiddlesticks",
-    "roles": ["Jungle", "Support"],
+    "roles": ["Support"],
     "features": ["CC", "HARDCC", "HARDENGAGE", "POKE"],
     "priorities": []
 }

@@ -1,6 +1,6 @@
 {
     "name": "Gragas",
-    "roles": ["Mid", "Jungle"],
+    "roles": ["Jungle"],
     "features": ["CC", "HARDCC", "ENGAGE", "HARDENGAGE", "ROAM"],
     "priorities": []
 }

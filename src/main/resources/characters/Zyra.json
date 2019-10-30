@@ -1,1 +1,6 @@
-{"name":"Zyra","roles":["Mid","Support"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Zyra",
+    "roles": ["Support"],
+    "features": ["CC", "HARDCC"],
+    "priorities": []
+}

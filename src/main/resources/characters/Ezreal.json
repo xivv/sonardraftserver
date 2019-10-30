@@ -1,6 +1,6 @@
 {
     "name": "Ezreal",
-    "roles": ["Bottom", "Mid"],
+    "roles": ["Bottom"],
     "features": ["POKE"],
     "priorities": []
 }

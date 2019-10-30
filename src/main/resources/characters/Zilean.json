@@ -1,6 +1,6 @@
 {
     "name": "Zilean",
-    "roles": ["Mid", "Support"],
-    "features": ["CC", "HARDCC", "ENGAGE", "HARDENGAGE", "POKE", "SPLITPUSH", "WAVECLEAR", "DUELLANT", "ROAM", "SUSTAIN", "ASSASINATION", "TANK"],
+    "roles": ["Support"],
+    "features": ["CC", "HARDCC", "POKE", "WAVECLEAR", "SUSTAIN"],
     "priorities": []
 }

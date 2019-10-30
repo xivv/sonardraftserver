@@ -1,6 +1,6 @@
 {
     "name": "Gangplank",
-    "roles": ["Top", "Jungle", "Mid"],
+    "roles": ["Top", "Mid"],
     "features": ["CC", "ENGAGE", "POKE", "WAVECLEAR"],
     "priorities": []
 }
