@@ -1,1 +1,6 @@
-{"name":"Trundle","roles":["Top","Jungle","Support"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Trundle",
+    "roles": ["Top", "Jungle", "Support"],
+    "features": ["CC", "SUSTAIN", "TANK"],
+    "priorities": []
+}
