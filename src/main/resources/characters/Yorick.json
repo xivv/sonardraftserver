@@ -1,1 +1,6 @@
-{"name":"Yorick","roles":["Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Yorick",
+    "roles": ["Top"],
+    "features": ["CC", "SPLITPUSH", "TANK"],
+    "priorities": []
+}

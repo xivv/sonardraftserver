@@ -1,1 +1,6 @@
-{"name":"Warwick","roles":["Jungle","Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Warwick",
+    "roles": ["Jungle"],
+    "features": ["HARDCC", "HARDENGAGE", "ROAM", "TANK"],
+    "priorities": []
+}

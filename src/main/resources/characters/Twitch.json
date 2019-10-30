@@ -1,6 +1,6 @@
 {
     "name": "Twitch",
-    "roles": ["Jungle", "Bottom"],
+    "roles": ["Bottom"],
     "features": ["CC", "ENGAGE", "ROAM"],
     "priorities": []
 }

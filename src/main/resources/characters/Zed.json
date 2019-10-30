@@ -1,1 +1,6 @@
-{"name":"Zed","roles":["Mid"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Zed",
+    "roles": ["Mid"],
+    "features": ["CC", "ASSASINATION"],
+    "priorities": []
+}

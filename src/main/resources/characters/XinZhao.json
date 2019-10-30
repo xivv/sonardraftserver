@@ -1,1 +1,6 @@
-{"name":"XinZhao","roles":["Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "XinZhao",
+    "roles": ["Jungle"],
+    "features": ["CC", "HARDCC", "ENGAGE", "HARDENGAGE", "DUELLANT", "TANK"],
+    "priorities": []
+}

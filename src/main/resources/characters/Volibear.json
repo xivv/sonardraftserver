@@ -1,1 +1,6 @@
-{"name":"Volibear","roles":["Jungle","Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Volibear",
+    "roles": ["Jungle"],
+    "features": ["CC", "HARDCC", "HARDENGAGE", "TANK"],
+    "priorities": []
+}

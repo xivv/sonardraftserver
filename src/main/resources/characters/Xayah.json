@@ -1,1 +1,9 @@
-{"name":"Xayah","roles":["Bottom"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[{"name":"Rakan","roles":[],"features":[],"priorities":[],"priorityBonus":100,"priority":0}]}
+{
+    "name": "Xayah",
+    "roles": ["Bottom"],
+    "features": ["CC"],
+    "priorities": [{
+        "name": "Rakan",
+        "priorityBonus": 100
+    }]
+}

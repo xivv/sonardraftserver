@@ -1,1 +1,6 @@
-{"name":"Vi","roles":["Jungle"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Vi",
+    "roles": ["Jungle"],
+    "features": ["HARDCC", "ENGAGE", "HARDENGAGE", "ASSASINATION", "TANK"],
+    "priorities": []
+}

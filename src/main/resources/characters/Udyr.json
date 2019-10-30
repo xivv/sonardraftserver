@@ -1,1 +1,6 @@
-{"name":"Udyr","roles":["Jungle","Top"],"features":["CC","HARDCC","ENGAGE","HARDENGAGE","POKE","SPLITPUSH","WAVECLEAR","DUELLANT","ROAM","SUSTAIN","ASSASINATION","TANK"],"priorities":[]}
+{
+    "name": "Udyr",
+    "roles": ["Jungle"],
+    "features": ["HARDCC", "HARDENGAGE", "DUELLANT", "ROAM", "TANK"],
+    "priorities": []
+}
