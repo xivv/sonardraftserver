@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.io.FilenameUtils;
+import org.opencv.core.Mat;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
 
@@ -25,7 +26,7 @@ public class Variables {
 	public static final String[] IMAGEFORMATS = { "png" };
 
 	public static String BASE = "";
-	public static String CHARACTERPATH = BASE + "characters";
+	public static String CHARACTERPATH = BASE + "characters\\";
 	public static String RESULTPATH = BASE + "result\\";
 	public static String SCREENPATH = BASE + "screenshots\\";
 
@@ -82,8 +83,10 @@ public class Variables {
 				}.getType());
 
 				// Load the characters image/mat
-				character.setMat(
-						Imgcodecs.imread(Variables.CHARACTERPATH + FilenameUtils.getBaseName(file.getName()) + ".png"));
+
+				Mat mat = Imgcodecs
+						.imread(Variables.CHARACTERPATH + FilenameUtils.getBaseName(file.getName()) + ".png");
+				character.setMat(mat);
 				Variables.characters.add(character);
 			}
 		}

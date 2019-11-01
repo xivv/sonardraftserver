@@ -47,7 +47,7 @@ public class Tools {
 
 	public static Draft getDraft() {
 
-		List<Mat> screenshots = Tools.takeScreenshots(false);
+		List<Mat> screenshots = Tools.takeScreenshots(true);
 		Draft draft = new Draft();
 
 		int counter = 0;

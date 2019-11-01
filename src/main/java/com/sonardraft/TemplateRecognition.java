@@ -2,15 +2,11 @@ package com.sonardraft;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.util.Arrays;
-import java.util.List;
 
 import org.opencv.core.Core;
 import org.opencv.core.Core.MinMaxLocResult;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
-import org.opencv.core.MatOfFloat;
-import org.opencv.core.MatOfInt;
 import org.opencv.core.Point;
 import org.opencv.core.Scalar;
 import org.opencv.highgui.HighGui;
@@ -31,12 +27,14 @@ public class TemplateRecognition {
 		Double bestValue = 1d;
 
 		for (Character character : Variables.characters) {
+
 			Mat template = character.getMat();
 
 			Mat resultMatrix = new Mat();
 			int result_cols = source.cols() - template.cols() + 1;
 			int result_rows = source.rows() - template.rows() + 1;
 			resultMatrix.create(result_rows, result_cols, CvType.CV_32FC1);
+
 			Imgproc.matchTemplate(source, template, resultMatrix, Variables.METHOD);
 
 			MinMaxLocResult mmr = Core.minMaxLoc(resultMatrix);
@@ -45,6 +43,7 @@ public class TemplateRecognition {
 				bestCharacter = character;
 				bestValue = mmr.minVal;
 			}
+
 		}
 
 		return bestCharacter != null ? bestCharacter : new Character(null, null, "None");
@@ -63,24 +62,4 @@ public class TemplateRecognition {
 
 		return Tools.toBufferedImage(HighGui.toBufferedImage(screenshot));
 	}
-
-	public static Mat calculateHistogramm(Mat mat) {
-
-		Mat histogramm = new Mat();
-		Mat histgrammResult = new Mat();
-		mat.copyTo(histogramm);
-
-		Imgproc.cvtColor(mat, histogramm, Imgproc.COLOR_RGB2RGBA);
-
-		List<Mat> hsvTest1List = Arrays.asList(histogramm);
-		Imgproc.calcHist(hsvTest1List, new MatOfInt(Variables.HISTOGRAMMCHANNELS), new Mat(), histgrammResult,
-				new MatOfInt(Variables.HISTOGRAMMSIZE), new MatOfFloat(Variables.HISTOGRAMMRANGE), true);
-
-		Mat histImage = new Mat(512, 400, CvType.CV_8UC3, new Scalar(0, 0, 0));
-
-		Core.normalize(histgrammResult, histgrammResult, 0, histImage.rows(), Core.NORM_MINMAX);
-
-		return histgrammResult;
-	}
-
 }

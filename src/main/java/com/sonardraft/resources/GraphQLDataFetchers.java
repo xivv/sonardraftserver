@@ -38,8 +38,8 @@ public class GraphQLDataFetchers {
 
 	public DataFetcher getDraft() {
 		return dataFetchingEnvironment -> {
-			// Draft draft = Tools.getDraft();
-			return getDemoData();
+			Draft draft = Tools.getDraft();
+			return draft;
 		};
 	}
 
