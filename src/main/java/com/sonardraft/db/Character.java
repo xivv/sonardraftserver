@@ -5,6 +5,9 @@ import java.util.List;
 
 import org.opencv.core.Mat;
 
+import com.sonardraft.db.enums.Feature;
+import com.sonardraft.db.enums.Role;
+
 public class Character {
 
 	private Mat mat;
@@ -14,6 +17,7 @@ public class Character {
 	private List<Role> roles = new ArrayList<>();
 
 	private List<Character> priorities = new ArrayList<>();
+	private List<Feature> features = new ArrayList<>();
 
 	private Integer priorityBonus = 0;
 	private Integer priority = 0;
@@ -107,6 +111,14 @@ public class Character {
 
 	public void setRoles(List<Role> roles) {
 		this.roles = roles;
+	}
+
+	public List<Feature> getFeatures() {
+		return features;
+	}
+
+	public void setFeatures(List<Feature> features) {
+		this.features = features;
 	}
 
 }

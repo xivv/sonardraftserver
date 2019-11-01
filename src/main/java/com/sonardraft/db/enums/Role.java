@@ -1,4 +1,4 @@
-package com.sonardraft.db;
+package com.sonardraft.db.enums;
 
 import com.google.gson.annotations.SerializedName;
 

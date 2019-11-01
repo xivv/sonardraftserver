@@ -3,6 +3,8 @@ package com.sonardraft.db;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.sonardraft.db.enums.Role;
+
 public class Team {
 
 	private List<Character> picks;

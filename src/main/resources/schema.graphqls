@@ -26,8 +26,24 @@ enum Role {
 	SUPPORT
 }
 
+ enum Feature {
+	CC
+	HARDCC
+	ENGAGE
+	HARDENGAGE
+	POKE
+	SPLITPUSH
+	WAVECLEAR
+	DUELLANT
+	ROAM
+	SUSTAIN
+	ASSASINATION
+	TANK
+}
+
 type Character {
 	name: String
 	priorities: [Character]
+	features: [Feature]
 	priority: Int
 }

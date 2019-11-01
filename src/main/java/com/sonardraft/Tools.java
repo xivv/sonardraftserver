@@ -33,7 +33,7 @@ import org.opencv.imgcodecs.Imgcodecs;
 
 import com.sonardraft.db.Character;
 import com.sonardraft.db.Draft;
-import com.sonardraft.db.Role;
+import com.sonardraft.db.enums.Role;
 import com.sun.jna.platform.WindowUtils;
 
 public class Tools {
@@ -150,7 +150,6 @@ public class Tools {
 		Collections.sort(draft.getBlue().getCombos(), (o1, o2) -> o2.getPriority().compareTo(o1.getPriority()));
 		Collections.sort(draft.getRed().getCombos(), (o1, o2) -> o2.getPriority().compareTo(o1.getPriority()));
 
-		Variables.initialiseCharacters();
 		return draft;
 	}
 
