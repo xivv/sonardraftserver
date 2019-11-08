@@ -4,7 +4,12 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Hecarim",
+      "priorityBonus": 50
+    }
+  ],
   "features": [
     "HARDCC",
     "ASSASINATION",

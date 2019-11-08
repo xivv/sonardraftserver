@@ -112,6 +112,19 @@ public class Tools {
 					}
 				}
 			}
+			for (Character possibleCounter : character.getCounter ()) {
+
+				// If character is available and add the prio
+				Character foundCounter = findByName(draft.getRed().getCombos(), possibleCounter.getName());
+
+				if (foundCounter != null) {
+					foundCounter.setPriority(foundCounter.getPriority() + possibleCounter.getPriorityBonus());
+
+					if (foundCounter.getPriority() > 100) {
+						foundCounter.setPriority(100);
+					}
+				}
+			}
 		}
 
 		for (Character character : draft.getRed().getPicks()) {
@@ -125,6 +138,19 @@ public class Tools {
 
 					if (foundCombo.getPriority() > 100) {
 						foundCombo.setPriority(100);
+					}
+				}
+			}
+			for (Character possibleCounter : character.getCounter ()) {
+
+				// If character is available and add the prio
+				Character foundCounter = findByName(draft.getBlue().getCombos(), possibleCounter.getName());
+
+				if (foundCounter != null) {
+					foundCounter.setPriority(foundCounter.getPriority() + possibleCounter.getPriorityBonus());
+
+					if (foundCounter.getPriority() > 100) {
+						foundCounter.setPriority(100);
 					}
 				}
 			}
