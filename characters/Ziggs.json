@@ -1,0 +1,15 @@
+{
+  "name": "Ziggs",
+  "roles": [
+    "Mid",
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "POKE",
+    "WAVECLEAR"
+  ],
+  "priority": 0
+}

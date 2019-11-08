@@ -1,0 +1,19 @@
+{
+  "name": "Pantheon",
+  "roles": [
+    "Jungle",
+    "Top",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "SPLITPUSH",
+    "ROAM",
+    "TANK"
+  ],
+  "priority": 0
+}

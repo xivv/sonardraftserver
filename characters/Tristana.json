@@ -1,0 +1,16 @@
+{
+  "name": "Tristana",
+  "roles": [
+    "Bottom",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "WAVECLEAR"
+  ],
+  "priority": 0
+}

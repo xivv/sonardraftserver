@@ -1,0 +1,16 @@
+{
+  "name": "Leona",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "TANK"
+  ],
+  "priority": 0
+}

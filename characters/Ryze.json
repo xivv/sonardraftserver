@@ -1,0 +1,17 @@
+{
+  "name": "Ryze",
+  "roles": [
+    "Top",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "WAVECLEAR",
+    "DUELLANT",
+    "ROAM"
+  ],
+  "priority": 0
+}

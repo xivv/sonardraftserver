@@ -1,0 +1,16 @@
+{
+  "name": "Rengar",
+  "roles": [
+    "Jungle",
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

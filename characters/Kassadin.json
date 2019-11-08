@@ -1,0 +1,15 @@
+{
+  "name": "Kassadin",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "DUELLANT",
+    "ROAM"
+  ],
+  "priority": 0
+}

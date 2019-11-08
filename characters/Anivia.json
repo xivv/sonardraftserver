@@ -1,0 +1,14 @@
+{
+  "name": "Anivia",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "WAVECLEAR"
+  ],
+  "priority": 0
+}

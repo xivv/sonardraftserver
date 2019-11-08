@@ -1,0 +1,14 @@
+{
+  "name": "Twitch",
+  "roles": [
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "ROAM"
+  ],
+  "priority": 0
+}

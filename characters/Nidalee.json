@@ -1,0 +1,16 @@
+{
+  "name": "Nidalee",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "ENGAGE",
+    "POKE",
+    "ROAM",
+    "SUSTAIN",
+    "TANK"
+  ],
+  "priority": 0
+}

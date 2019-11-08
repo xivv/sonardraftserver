@@ -1,0 +1,16 @@
+{
+  "name": "Gnar",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "TANK"
+  ],
+  "priority": 0
+}

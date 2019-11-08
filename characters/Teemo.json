@@ -1,0 +1,15 @@
+{
+  "name": "Teemo",
+  "roles": [
+    "Top",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "POKE",
+    "ROAM"
+  ],
+  "priority": 0
+}

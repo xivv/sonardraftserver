@@ -1,0 +1,16 @@
+{
+  "name": "Gragas",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "ROAM"
+  ],
+  "priority": 0
+}

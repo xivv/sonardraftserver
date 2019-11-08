@@ -1,0 +1,17 @@
+{
+  "name": "Vladimir",
+  "roles": [
+    "Top",
+    "Mid",
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "ENGAGE",
+    "WAVECLEAR",
+    "DUELLANT",
+    "TANK"
+  ],
+  "priority": 0
+}

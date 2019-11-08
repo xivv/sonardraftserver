@@ -1,0 +1,16 @@
+{
+  "name": "Qiyana",
+  "roles": [
+    "Mid",
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

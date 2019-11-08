@@ -1,0 +1,16 @@
+{
+  "name": "AurelionSol",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "HARDENGAGE",
+    "POKE",
+    "WAVECLEAR",
+    "ROAM"
+  ],
+  "priority": 0
+}

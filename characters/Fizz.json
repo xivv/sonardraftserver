@@ -1,0 +1,16 @@
+{
+  "name": "Fizz",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

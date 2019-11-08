@@ -1,0 +1,15 @@
+{
+  "name": "Urgot",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "WAVECLEAR",
+    "ASSASINATION",
+    "TANK"
+  ],
+  "priority": 0
+}

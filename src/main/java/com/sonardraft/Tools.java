@@ -99,7 +99,7 @@ public class Tools {
 
 		// Check for combos
 		for (Character character : draft.getBlue().getPicks()) {
-			for (Character possibleCombo : character.getPriorities()) {
+			for (Character possibleCombo : character.getCombos ()) {
 
 				// If character is available and add the prio
 				Character foundCombo = findByName(draft.getBlue().getCombos(), possibleCombo.getName());
@@ -115,7 +115,7 @@ public class Tools {
 		}
 
 		for (Character character : draft.getRed().getPicks()) {
-			for (Character possibleCombo : character.getPriorities()) {
+			for (Character possibleCombo : character.getCombos ()) {
 
 				// If character is available and add the prio
 				Character foundCombo = findByName(draft.getRed().getCombos(), possibleCombo.getName());

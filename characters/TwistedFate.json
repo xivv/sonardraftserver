@@ -1,0 +1,17 @@
+{
+  "name": "TwistedFate",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "POKE",
+    "SPLITPUSH",
+    "ROAM"
+  ],
+  "priority": 0
+}

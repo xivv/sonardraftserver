@@ -1,0 +1,17 @@
+{
+  "name": "Syndra",
+  "roles": [
+    "Mid",
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "POKE",
+    "WAVECLEAR",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Ivern",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "TANK",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

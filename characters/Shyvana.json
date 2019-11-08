@@ -1,0 +1,17 @@
+{
+  "name": "Shyvana",
+  "roles": [
+    "Top",
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "HARDENGAGE",
+    "POKE",
+    "ROAM",
+    "TANK"
+  ],
+  "priority": 0
+}

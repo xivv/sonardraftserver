@@ -1,0 +1,14 @@
+{
+  "name": "Nami",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

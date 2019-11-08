@@ -1,0 +1,16 @@
+{
+  "name": "Skarner",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "HARDENGAGE",
+    "ROAM",
+    "TANK"
+  ],
+  "priority": 0
+}

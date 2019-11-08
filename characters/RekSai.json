@@ -1,0 +1,15 @@
+{
+  "name": "RekSai",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "HARDENGAGE",
+    "ASSASINATION",
+    "TANK"
+  ],
+  "priority": 0
+}

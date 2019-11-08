@@ -1,0 +1,16 @@
+{
+  "name": "Trundle",
+  "roles": [
+    "Top",
+    "Jungle",
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "SUSTAIN",
+    "TANK"
+  ],
+  "priority": 0
+}

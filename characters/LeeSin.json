@@ -1,0 +1,17 @@
+{
+  "name": "LeeSin",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "ROAM",
+    "ASSASINATION",
+    "TANK"
+  ],
+  "priority": 0
+}

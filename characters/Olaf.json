@@ -1,0 +1,16 @@
+{
+  "name": "Olaf",
+  "roles": [
+    "Top",
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "DUELLANT",
+    "TANK"
+  ],
+  "priority": 0
+}

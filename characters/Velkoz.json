@@ -1,0 +1,15 @@
+{
+  "name": "Velkoz",
+  "roles": [
+    "Mid",
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "POKE"
+  ],
+  "priority": 0
+}

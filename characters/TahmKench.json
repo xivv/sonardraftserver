@@ -1,0 +1,17 @@
+{
+  "name": "TahmKench",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "ROAM",
+    "SUSTAIN",
+    "TANK"
+  ],
+  "priority": 0
+}

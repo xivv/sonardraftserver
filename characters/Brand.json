@@ -1,0 +1,14 @@
+{
+  "name": "Brand",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "POKE",
+    "WAVECLEAR"
+  ],
+  "priority": 0
+}

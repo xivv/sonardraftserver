@@ -1,0 +1,17 @@
+{
+  "name": "Shen",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "HARDENGAGE",
+    "SPLITPUSH",
+    "DUELLANT",
+    "SUSTAIN",
+    "TANK"
+  ],
+  "priority": 0
+}

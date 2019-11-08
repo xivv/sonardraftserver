@@ -1,0 +1,16 @@
+{
+  "name": "Zilean",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "POKE",
+    "WAVECLEAR",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

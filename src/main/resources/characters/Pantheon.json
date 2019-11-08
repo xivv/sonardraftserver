@@ -1,6 +1,0 @@
-{
-    "name": "Pantheon",
-    "roles": ["Jungle", "Top", "Mid"],
-    "features": ["CC", "HARDCC", "ENGAGE", "SPLITPUSH", "ROAM", "TANK"],
-    "priorities": []
-}

@@ -1,0 +1,14 @@
+{
+  "name": "Varus",
+  "roles": [
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "POKE"
+  ],
+  "priority": 0
+}

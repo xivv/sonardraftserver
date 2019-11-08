@@ -1,0 +1,17 @@
+{
+  "name": "Chogath",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "HARDENGAGE",
+    "SPLITPUSH",
+    "WAVECLEAR",
+    "TANK"
+  ],
+  "priority": 0
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Yuumi",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "POKE",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

@@ -1,6 +1,0 @@
-{
-    "name": "Kled",
-    "roles": ["Top"],
-    "features": ["CC", "HARDCC", "ENGAGE", "HARDENGAGE", "SPLITPUSH", "DUELLANT", "ROAM", "TANK"],
-    "priorities": []
-}

@@ -1,0 +1,15 @@
+{
+  "name": "Azir",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "POKE",
+    "WAVECLEAR"
+  ],
+  "priority": 0
+}

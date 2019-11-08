@@ -1,0 +1,17 @@
+{
+  "name": "Nautilus",
+  "roles": [
+    "Support",
+    "Mid",
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "HARDENGAGE",
+    "TANK"
+  ],
+  "priority": 0
+}

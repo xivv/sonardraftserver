@@ -1,0 +1,14 @@
+{
+  "name": "Blitzcrank",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ROAM"
+  ],
+  "priority": 0
+}

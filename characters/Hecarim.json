@@ -1,0 +1,17 @@
+{
+  "name": "Hecarim",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "ROAM",
+    "TANK"
+  ],
+  "priority": 0
+}

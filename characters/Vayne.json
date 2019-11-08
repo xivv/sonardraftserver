@@ -1,0 +1,13 @@
+{
+  "name": "Vayne",
+  "roles": [
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "DUELLANT"
+  ],
+  "priority": 0
+}

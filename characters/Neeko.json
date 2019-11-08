@@ -1,0 +1,18 @@
+{
+  "name": "Neeko",
+  "roles": [
+    "Mid",
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "HARDENGAGE",
+    "POKE",
+    "WAVECLEAR",
+    "ROAM"
+  ],
+  "priority": 0
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Renekton",
+  "roles": [
+    "Top",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "ENGAGE",
+    "WAVECLEAR",
+    "DUELLANT",
+    "TANK"
+  ],
+  "priority": 0
+}

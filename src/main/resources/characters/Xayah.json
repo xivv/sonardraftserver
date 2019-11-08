@@ -1,9 +1,0 @@
-{
-    "name": "Xayah",
-    "roles": ["Bottom"],
-    "features": ["CC"],
-    "priorities": [{
-        "name": "Rakan",
-        "priorityBonus": 100
-    }]
-}

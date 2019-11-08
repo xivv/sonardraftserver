@@ -1,0 +1,14 @@
+{
+  "name": "Riven",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "DUELLANT",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

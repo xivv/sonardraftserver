@@ -1,0 +1,17 @@
+{
+  "name": "Aatrox",
+  "roles": [
+    "Top",
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "WAVECLEAR",
+    "DUELLANT",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

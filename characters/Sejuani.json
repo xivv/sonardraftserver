@@ -1,0 +1,16 @@
+{
+  "name": "Sejuani",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "TANK"
+  ],
+  "priority": 0
+}

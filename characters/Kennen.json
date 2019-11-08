@@ -1,0 +1,15 @@
+{
+  "name": "Kennen",
+  "roles": [
+    "Bottom",
+    "Support",
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "HARDENGAGE"
+  ],
+  "priority": 0
+}

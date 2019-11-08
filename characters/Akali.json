@@ -1,0 +1,15 @@
+{
+  "name": "Akali",
+  "roles": [
+    "Mid",
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "DUELLANT",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

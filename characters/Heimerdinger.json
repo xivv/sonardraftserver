@@ -1,0 +1,17 @@
+{
+  "name": "Heimerdinger",
+  "roles": [
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "POKE",
+    "SPLITPUSH",
+    "WAVECLEAR",
+    "DUELLANT"
+  ],
+  "priority": 0
+}

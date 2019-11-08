@@ -1,0 +1,15 @@
+{
+  "name": "Nasus",
+  "roles": [
+    "Top",
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "DUELLANT",
+    "TANK"
+  ],
+  "priority": 0
+}

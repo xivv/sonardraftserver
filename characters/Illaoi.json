@@ -1,0 +1,14 @@
+{
+  "name": "Illaoi",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "WAVECLEAR",
+    "DUELLANT",
+    "TANK"
+  ],
+  "priority": 0
+}

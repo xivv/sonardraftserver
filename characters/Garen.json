@@ -1,0 +1,19 @@
+{
+  "name": "Garen",
+  "roles": [
+    "Top",
+    "Mid",
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "WAVECLEAR",
+    "DUELLANT",
+    "ASSASINATION",
+    "TANK"
+  ],
+  "priority": 0
+}

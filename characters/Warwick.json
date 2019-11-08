@@ -1,0 +1,15 @@
+{
+  "name": "Warwick",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "HARDENGAGE",
+    "ROAM",
+    "TANK"
+  ],
+  "priority": 0
+}

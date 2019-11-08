@@ -1,0 +1,15 @@
+{
+  "name": "Fiddlesticks",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "HARDENGAGE",
+    "POKE"
+  ],
+  "priority": 0
+}

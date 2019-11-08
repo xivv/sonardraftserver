@@ -1,0 +1,16 @@
+{
+  "name": "Ahri",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "ASSASINATION",
+    "POKE",
+    "WAVECLEAR",
+    "ROAM"
+  ],
+  "priority": 0
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Quinn",
+  "roles": [
+    "Top",
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "DUELLANT",
+    "ROAM"
+  ],
+  "priority": 0
+}

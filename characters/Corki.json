@@ -1,0 +1,15 @@
+{
+  "name": "Corki",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "ENGAGE",
+    "POKE",
+    "WAVECLEAR",
+    "ROAM"
+  ],
+  "priority": 0
+}

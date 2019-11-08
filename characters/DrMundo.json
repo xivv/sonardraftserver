@@ -1,0 +1,17 @@
+{
+  "name": "DrMundo",
+  "roles": [
+    "Top",
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "POKE",
+    "SPLITPUSH",
+    "TANK"
+  ],
+  "priority": 0
+}

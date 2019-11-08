@@ -16,7 +16,9 @@ public class Character {
 	private String name;
 	private List<Role> roles = new ArrayList<>();
 
-	private List<Character> priorities = new ArrayList<>();
+	private List<Character> combos  = new ArrayList<>();
+	private List<Character> counter = new ArrayList<>();
+
 	private List<Feature> features = new ArrayList<>();
 
 	private Integer priorityBonus = 0;
@@ -78,12 +80,12 @@ public class Character {
 		this.priority = priority;
 	}
 
-	public List<Character> getPriorities() {
-		return priorities;
+	public List<Character> getCombos () {
+		return combos;
 	}
 
-	public void setPriorities(List<Character> priorities) {
-		this.priorities = priorities;
+	public void setCombos ( List<Character> combos ) {
+		this.combos = combos;
 	}
 
 	public Integer getPriorityBonus() {
@@ -121,4 +123,11 @@ public class Character {
 		this.features = features;
 	}
 
+	public List<Character> getCounter () {
+		return counter;
+	}
+
+	public void setCounter ( List<Character> counter ) {
+		this.counter = counter;
+	}
 }

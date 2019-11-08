@@ -1,0 +1,15 @@
+{
+  "name": "Talon",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

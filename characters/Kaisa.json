@@ -1,0 +1,15 @@
+{
+  "name": "Kaisa",
+  "roles": [
+    "Bottom",
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "ENGAGE",
+    "WAVECLEAR",
+    "DUELLANT"
+  ],
+  "priority": 0
+}

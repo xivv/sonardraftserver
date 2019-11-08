@@ -1,0 +1,15 @@
+{
+  "name": "Swain",
+  "roles": [
+    "Top",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE"
+  ],
+  "priority": 0
+}

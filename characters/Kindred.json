@@ -1,0 +1,15 @@
+{
+  "name": "Kindred",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "DUELLANT",
+    "ROAM",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

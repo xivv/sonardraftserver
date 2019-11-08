@@ -1,0 +1,13 @@
+{
+  "name": "Rumble",
+  "roles": [
+    "Top",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC"
+  ],
+  "priority": 0
+}

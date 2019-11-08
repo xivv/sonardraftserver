@@ -1,0 +1,15 @@
+{
+  "name": "Lux",
+  "roles": [
+    "Support",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "POKE",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

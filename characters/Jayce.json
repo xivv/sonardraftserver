@@ -1,0 +1,15 @@
+{
+  "name": "Jayce",
+  "roles": [
+    "Top",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "POKE"
+  ],
+  "priority": 0
+}

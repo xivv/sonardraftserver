@@ -1,0 +1,16 @@
+{
+  "name": "Leblanc",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "POKE",
+    "DUELLANT",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

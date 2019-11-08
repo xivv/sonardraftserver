@@ -1,0 +1,14 @@
+{
+  "name": "Poppy",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "TANK"
+  ],
+  "priority": 0
+}

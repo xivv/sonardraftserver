@@ -1,0 +1,17 @@
+{
+  "name": "JarvanIV",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "ROAM",
+    "ASSASINATION",
+    "TANK"
+  ],
+  "priority": 0
+}

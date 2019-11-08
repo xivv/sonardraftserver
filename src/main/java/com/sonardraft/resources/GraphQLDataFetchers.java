@@ -38,8 +38,7 @@ public class GraphQLDataFetchers {
 
 	public DataFetcher getDraft() {
 		return dataFetchingEnvironment -> {
-			Draft draft = Tools.getDraft();
-			return draft;
+			return getDemoData ();
 		};
 	}
 
@@ -49,7 +48,7 @@ public class GraphQLDataFetchers {
 
 		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Draven"));
 		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Evelynn"));
-		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Ezreal"));
+		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Ahri"));
 		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Kled"));
 
 		draft.getRed().getPicks().add(Tools.findByName(Variables.characters, "Gragas"));

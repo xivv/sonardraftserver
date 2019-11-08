@@ -1,0 +1,15 @@
+{
+  "name": "Cassiopeia",
+  "roles": [
+    "Mid",
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "DUELLANT"
+  ],
+  "priority": 0
+}

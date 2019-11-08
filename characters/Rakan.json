@@ -1,0 +1,16 @@
+{
+  "name": "Rakan",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "HARDENGAGE",
+    "ROAM",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

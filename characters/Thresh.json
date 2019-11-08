@@ -1,0 +1,16 @@
+{
+  "name": "Thresh",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "HARDENGAGE",
+    "SUSTAIN",
+    "TANK"
+  ],
+  "priority": 0
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Kled",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "SPLITPUSH",
+    "DUELLANT",
+    "ROAM",
+    "TANK"
+  ],
+  "priority": 0
+}

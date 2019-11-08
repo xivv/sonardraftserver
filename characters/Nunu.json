@@ -1,0 +1,15 @@
+{
+  "name": "Nunu",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDENGAGE",
+    "ROAM",
+    "TANK"
+  ],
+  "priority": 0
+}

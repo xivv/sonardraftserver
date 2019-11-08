@@ -1,0 +1,14 @@
+{
+  "name": "Braum",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "SUSTAIN",
+    "TANK"
+  ],
+  "priority": 0
+}

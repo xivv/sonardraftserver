@@ -1,0 +1,16 @@
+{
+  "name": "Udyr",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "HARDENGAGE",
+    "DUELLANT",
+    "ROAM",
+    "TANK"
+  ],
+  "priority": 0
+}

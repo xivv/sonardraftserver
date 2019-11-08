@@ -1,0 +1,16 @@
+{
+  "name": "Zoe",
+  "roles": [
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "POKE",
+    "SPLITPUSH",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

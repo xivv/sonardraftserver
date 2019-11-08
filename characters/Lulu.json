@@ -1,0 +1,16 @@
+{
+  "name": "Lulu",
+  "roles": [
+    "Support",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "POKE",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

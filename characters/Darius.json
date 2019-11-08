@@ -1,0 +1,15 @@
+{
+  "name": "Darius",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "WAVECLEAR",
+    "DUELLANT",
+    "TANK"
+  ],
+  "priority": 0
+}

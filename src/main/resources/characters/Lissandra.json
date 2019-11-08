@@ -1,6 +1,0 @@
-{
-    "name": "Lissandra",
-    "roles": ["Mid", "Top"],
-    "features": ["CC", "HARDCC", "ENGAGE", "HARDENGAGE", "WAVECLEAR", "ROAM"],
-    "priorities": []
-}

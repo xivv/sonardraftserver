@@ -1,0 +1,14 @@
+{
+  "name": "Taric",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "SUSTAIN",
+    "TANK"
+  ],
+  "priority": 0
+}

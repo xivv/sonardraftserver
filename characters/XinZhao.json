@@ -1,0 +1,17 @@
+{
+  "name": "XinZhao",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "DUELLANT",
+    "TANK"
+  ],
+  "priority": 0
+}

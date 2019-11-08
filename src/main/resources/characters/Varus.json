@@ -1,6 +1,0 @@
-{
-    "name": "Varus",
-    "roles": ["Bottom"],
-    "features": ["CC", "HARDCC", "POKE"],
-    "priorities": []
-}

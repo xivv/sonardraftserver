@@ -1,0 +1,14 @@
+{
+  "name": "Evelynn",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

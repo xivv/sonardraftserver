@@ -1,0 +1,18 @@
+{
+  "name": "Sylas",
+  "roles": [
+    "Top",
+    "Mid",
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "HARDENGAGE",
+    "WAVECLEAR",
+    "DUELLANT"
+  ],
+  "priority": 0
+}

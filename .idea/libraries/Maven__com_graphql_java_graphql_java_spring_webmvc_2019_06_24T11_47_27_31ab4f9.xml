@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.graphql-java:graphql-java-spring-webmvc:2019-06-24T11-47-27-31ab4f9">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java-spring-webmvc/2019-06-24T11-47-27-31ab4f9/graphql-java-spring-webmvc-2019-06-24T11-47-27-31ab4f9.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java-spring-webmvc/2019-06-24T11-47-27-31ab4f9/graphql-java-spring-webmvc-2019-06-24T11-47-27-31ab4f9-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/graphql-java/graphql-java-spring-webmvc/2019-06-24T11-47-27-31ab4f9/graphql-java-spring-webmvc-2019-06-24T11-47-27-31ab4f9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

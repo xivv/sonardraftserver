@@ -1,0 +1,16 @@
+{
+  "name": "Galio",
+  "roles": [
+    "Support",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "HARDENGAGE",
+    "WAVECLEAR",
+    "TANK"
+  ],
+  "priority": 0
+}

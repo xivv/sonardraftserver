@@ -1,0 +1,14 @@
+{
+  "name": "Yorick",
+  "roles": [
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "SPLITPUSH",
+    "TANK"
+  ],
+  "priority": 0
+}

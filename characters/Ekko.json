@@ -1,0 +1,20 @@
+{
+  "name": "Ekko",
+  "roles": [
+    "Top",
+    "Jungle",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "DUELLANT",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Ashe",
+  "roles": [
+    "Bottom"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "HARDCC",
+    "HARDENGAGE",
+    "POKE"
+  ],
+  "priority": 0
+}

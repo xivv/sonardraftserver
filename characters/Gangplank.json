@@ -1,0 +1,16 @@
+{
+  "name": "Gangplank",
+  "roles": [
+    "Top",
+    "Mid"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "POKE",
+    "WAVECLEAR"
+  ],
+  "priority": 0
+}

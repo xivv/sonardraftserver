@@ -1,0 +1,17 @@
+{
+  "name": "Annie",
+  "roles": [
+    "Mid",
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "ROAM",
+    "ASSASINATION"
+  ],
+  "priority": 0
+}

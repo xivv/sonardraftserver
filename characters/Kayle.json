@@ -1,0 +1,17 @@
+{
+  "name": "Kayle",
+  "roles": [
+    "Mid",
+    "Bottom",
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "WAVECLEAR",
+    "DUELLANT",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

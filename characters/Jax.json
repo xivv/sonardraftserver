@@ -1,0 +1,17 @@
+{
+  "name": "Jax",
+  "roles": [
+    "Jungle",
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "ENGAGE",
+    "HARDENGAGE",
+    "DUELLANT",
+    "TANK"
+  ],
+  "priority": 0
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Morgana",
+  "roles": [
+    "Mid",
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "ENGAGE",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

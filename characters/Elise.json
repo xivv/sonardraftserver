@@ -1,0 +1,14 @@
+{
+  "name": "Elise",
+  "roles": [
+    "Jungle"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "ENGAGE",
+    "ROAM"
+  ],
+  "priority": 0
+}

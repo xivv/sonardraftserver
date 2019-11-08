@@ -1,0 +1,17 @@
+{
+  "name": "Karma",
+  "roles": [
+    "Support",
+    "Mid",
+    "Top"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "CC",
+    "POKE",
+    "SPLITPUSH",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}
