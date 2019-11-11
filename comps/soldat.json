@@ -1,0 +1,65 @@
+{
+  "name": "Soldat Special",
+  "picks": [
+    {
+      "name": "Darius",
+      "alternatives": [
+        {
+          "name": "Renekton"
+        },
+        {
+          "name": "Garen"
+        }
+      ]
+    },
+    {
+      "name": "Lulu",
+      "alternatives": [
+        {
+          "name": "Renekton"
+        },
+        {
+          "name": "Garen"
+        }
+      ]
+    },
+    {
+      "name": "Amumu",
+      "alternatives": [
+        {
+          "name": "Renekton"
+        },
+        {
+          "name": "Garen"
+        }
+      ]
+    },
+    {
+      "name": "Cassiopeia",
+      "alternatives": [
+        {
+          "name": "Renekton"
+        },
+        {
+          "name": "Garen"
+        }
+      ]
+    },
+    {
+      "name": "Leona",
+      "alternatives": [
+        {
+          "name": "Renekton"
+        },
+        {
+          "name": "Garen"
+        }
+      ]
+    }
+  ],
+  "banns": [
+    {
+      "name": "Ahri"
+    }
+  ]
+}

@@ -135,6 +135,9 @@ public class Tools {
         // Filter None and Picking
         filterSystemTemplates ( draft );
 
+        // Set comps available
+        draft.setComps ( getCompsAvailable ( draft.getBlue (), Variables.comps ) );
+
         // Filter combos for roles
 
         draft.getBlue ().setOpenRoles ( remainingRoles ( filterPickedRoles ( draft.getBlue ().getPicks () ) ) );
@@ -142,9 +145,6 @@ public class Tools {
         draft.getBlue ().setCombos ( filterRoles ( draft.getBlue ().getCombos (), filterPickedRoles ( draft.getBlue ().getPicks () ) ) );
 
         draft.getRed ().setCombos ( filterRoles ( draft.getRed ().getCombos (), filterPickedRoles ( draft.getRed ().getPicks () ) ) );
-
-        // Set comps available
-        draft.setComps ( getCompsAvailable ( draft.getBlue (), Variables.comps ) );
 
         // Order by priority
         Collections.sort ( draft.getBlue ().getCombos (), ( o1, o2 ) -> o2.getPriority ().compareTo ( o1.getPriority () ) );
@@ -224,6 +224,18 @@ public class Tools {
         return remainingRoles;
     }
 
+    private static boolean isCharacterAvailableOrPicked ( Character character, Team team ) {
+
+        boolean champAlreadyPicked = team.getPicks ().stream ().filter ( c1 -> c1.getName ().equals ( character.getName () ) ).findAny ()
+                                         .orElse ( null ) != null;
+
+        boolean champAvailable = team.getCombos ().stream ().filter ( c1 -> c1.getName ().equals ( character.getName () ) ).findAny ()
+                                     .orElse ( null ) != null;
+
+        return champAlreadyPicked || champAvailable;
+
+    }
+
     private static List<Comp> getCompsAvailable ( Team team, List<Comp> comps ) {
 
         List<Comp> availableComps = new ArrayList<> ();
@@ -231,14 +243,18 @@ public class Tools {
         compLoop:
         for ( Comp comp : comps ) {
 
+            characterLoop:
             for ( CompCharacter character : comp.getPicks () ) {
 
                 // If we didnt pick the champ yet and it is not available for us
+                if ( !isCharacterAvailableOrPicked ( character, team ) ) {
 
-                if ( team.getPicks ().parallelStream ().filter ( c1 -> c1.getName ().equals ( character.getName () ) ).findAny ()
-                         .orElse ( null ) != null && team.getCombos ().parallelStream ()
-                                                         .filter ( c1 -> c1.getName ().equals ( character.getName () ) ).findAny ()
-                                                         .orElse ( null ) != null ) {
+                    for ( Character alternative : character.getAlternatives () ) {
+                        if ( isCharacterAvailableOrPicked ( alternative, team ) ) {
+                            continue characterLoop;
+                        }
+                    }
+
                     continue compLoop;
                 }
 
