@@ -9,6 +9,13 @@ type Query {
 type Draft {
 	blue: Team
 	red: Team
+	comps: [Comp]
+}
+
+type Comp {
+    name: String
+    picks: [CompCharacter]
+    banns: [Character]
 }
 
 type Team {
@@ -39,6 +46,11 @@ enum Role {
 	SUSTAIN
 	ASSASINATION
 	TANK
+}
+
+type CompCharacter {
+    name: String
+    alternatives: [Character]
 }
 
 type Character {

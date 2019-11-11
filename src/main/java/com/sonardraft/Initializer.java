@@ -7,28 +7,24 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@SpringBootApplication
-public class Initializer {
+@SpringBootApplication public class Initializer {
 
-	public static void main(String[] args) {
-		// Initialize needed libraries
-		System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+    public static void main ( String[] args ) {
+        // Initialize needed libraries
+        System.loadLibrary ( Core.NATIVE_LIBRARY_NAME );
+        SpringApplication.run ( Initializer.class, args );
+        Variables.init ();
+    }
 
-		// Start API
-		SpringApplication.run(Initializer.class, args);
+    @Bean
+    public WebMvcConfigurer corsConfigurer () {
+        return new WebMvcConfigurer () {
 
-		// Start all listeners
-		Variables.init();
-
-	}
-
-	@Bean
-	public WebMvcConfigurer corsConfigurer() {
-		return new WebMvcConfigurer() {
-			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/graphql").allowedOrigins("*").allowedMethods("*").allowedHeaders("*");
-			}
-		};
-	}
+            @Override
+            public void addCorsMappings ( CorsRegistry registry ) {
+                registry.addMapping ( "/graphql" ).allowedOrigins ( "*" ).allowedMethods ( "*" ).allowedHeaders ( "*" );
+            }
+        };
+    }
 
 }

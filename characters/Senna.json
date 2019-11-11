@@ -1,0 +1,15 @@
+{
+  "name": "Senna",
+  "roles": [
+    "Support"
+  ],
+  "combos": [],
+  "counter": [],
+  "features": [
+    "HARDCC",
+    "ASSASINATION",
+    "POKE",
+    "SUSTAIN"
+  ],
+  "priority": 0
+}

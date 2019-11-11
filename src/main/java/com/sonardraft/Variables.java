@@ -5,6 +5,7 @@ import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.sonardraft.db.Character;
+import com.sonardraft.db.Comp;
 import org.apache.commons.io.FilenameUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -18,19 +19,24 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class Variables {
 
     /**
      * Konfiguration
      */
+
+    private static final Logger logger = Logger.getLogger ( Variables.class.getName () );
+
     public static final String   CHARACTERURL = "https://na.leagueoflegends.com/en/game-info/champions/";
     public static final String[] IMAGEFORMATS = { "png" };
 
-    public static String BASE          = "";
-    public static String CHARACTERPATH = BASE + "characters\\";
-    public static String RESULTPATH    = BASE + "result\\";
-    public static String SCREENPATH    = BASE + "screenshots\\";
+    public static       String BASE          = "";
+    public static final String CHARACTERPATH = BASE + "characters\\";
+    public static final String RESULTPATH    = BASE + "result\\";
+    public static final String SCREENPATH    = BASE + "screenshots\\";
 
     public static final int        METHOD = Imgproc.TM_SQDIFF_NORMED;
     public static       Screensize resolution;
@@ -46,21 +52,21 @@ public class Variables {
      * Statics
      */
     public static List<Character> characters = new ArrayList<> ();
+    public static List<Comp>      comps      = new ArrayList<> ();
 
     private Variables () {
     }
 
-
-    public static void main(String[] args) throws IOException {
+    public static void main ( String[] args ) throws IOException {
 
         String baseURL = "http://championcounter.com/";
         //String baseURL = "http://lolcounter.com/champions/";
         String url = baseURL + "Zed";
 
-        Document doc = Jsoup.connect( url).get();
-        System.out.println(doc.title ());
+        Document doc = Jsoup.connect ( url ).get ();
 
     }
+
     private static void loadCounterData () {
 
         try {
@@ -74,7 +80,7 @@ public class Variables {
 
                 List<Character> counters = new ArrayList<> ();
                 character.setCounter ( counters );
-                character.setMat(null);
+                character.setMat ( null );
                 character.setPriorityBonus ( null );
 
                 String freshConfiguration = new GsonBuilder ().setPrettyPrinting ().create ().toJson ( character );
@@ -85,7 +91,7 @@ public class Variables {
             }
 
         } catch ( Exception e ) {
-            e.printStackTrace ();
+            logger.log ( Level.SEVERE, "Couldnt load counter data:" + e.getMessage () );
         }
     }
 
@@ -106,7 +112,7 @@ public class Variables {
         }
     }
 
-    public static void initialiseCharacters () throws IOException {
+    public static void initialiseCharacters () {
 
         // We resize the images to match our resolution
         Tools.resizeImages ( Variables.CHARACTERPATH, 64 );
@@ -119,7 +125,12 @@ public class Variables {
             if ( FilenameUtils.getExtension ( file.getName () ).equals ( "json" ) ) {
 
                 // Load the character configuration
-                String priorityProperties = Resources.toString ( file.toURI ().toURL (), StandardCharsets.UTF_8 );
+                String priorityProperties = null;
+                try {
+                    priorityProperties = Resources.toString ( file.toURI ().toURL (), StandardCharsets.UTF_8 );
+                } catch ( IOException e ) {
+                    logger.log ( Level.SEVERE, "Couldnt initialise characters:" + e.getMessage () );
+                }
                 Character character = new Gson ().fromJson ( priorityProperties, new TypeToken<Character> () {
 
                 }.getType () );
@@ -130,6 +141,20 @@ public class Variables {
                 character.setMat ( mat );
                 Variables.characters.add ( character );
             }
+        }
+
+    }
+
+    public static void initialiseComps () {
+
+        File compFile = new File ( BASE + "comps.json" );
+        try {
+            String compString = Resources.toString ( compFile.toURI ().toURL (), StandardCharsets.UTF_8 );
+            comps = new Gson ().fromJson ( compString, new TypeToken<List<Comp>> () {
+
+            }.getType () );
+        } catch ( IOException e ) {
+            logger.log ( Level.SEVERE, "Couldnt initialise comps:" + e.getMessage () );
         }
 
     }
@@ -147,13 +172,9 @@ public class Variables {
         //		}
 
         // Get configured character combo properties
-        try {
-            initialiseCharacters ();
-           // loadCounterData ();
-        } catch ( IOException e ) {
-            System.out.println ( "Couldnt initialise characters" );
-            e.printStackTrace ();
-        }
+        initialiseCharacters ();
+        initialiseComps ();
+        // loadCounterData ();
 
         return true;
     }
