@@ -2,7 +2,6 @@ package com.sonardraft;
 
 import com.google.common.io.Resources;
 import com.google.common.reflect.TypeToken;
-import com.google.errorprone.annotations.Var;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.sonardraft.db.Character;
@@ -10,6 +9,8 @@ import com.sonardraft.db.Comp;
 import org.apache.commons.io.FilenameUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
 import org.opencv.core.Mat;
 import org.opencv.imgcodecs.Imgcodecs;
 import org.opencv.imgproc.Imgproc;
@@ -52,17 +53,54 @@ public class Variables {
     private Variables () {
     }
 
-    public static void main ( String[] args ) throws IOException {
+    public static void loadCounterData () {
 
-        String baseURL = "http://championcounter.com/";
-        //String baseURL = "http://lolcounter.com/champions/";
-        String url = baseURL + "Zed";
+        //String baseURL = "http://championcounter.com/";
+        String baseURL = "http://lolcounter.com/champions/";
 
-        Document doc = Jsoup.connect ( url ).get ();
+        for ( Character character : Variables.characters ) {
 
+            String url = baseURL + character.getName ();
+
+            Document doc = null;
+            try {
+                doc = Jsoup.connect ( url ).get ();
+            } catch ( IOException e ) {
+                logger.log ( Level.INFO, "Couldnt load counter data: " + e.getMessage () );
+                return;
+            }
+
+            // Each weak-block represents a counter
+            Elements weakBlocks = doc.getElementsByClass ( "weak-block" );
+
+            weakBlocks.forEach ( weakBlock -> {
+                // This is the name, which can only be one element
+                String counterName = weakBlock.getElementsByClass ( "name" ).get ( 0 ).val ();
+                Character counter = Tools.findByName ( Variables.characters, counterName );
+
+                // This is the %, which can only be one element
+                Element percentage = weakBlock.getElementsByClass ( "per-bar" ).get ( 0 );
+                // There is only one item inside <div style="".. class="_59"...
+                String classes = String.valueOf ( percentage.getAllElements ().get ( 0 ).getClass () );
+
+                Integer priorityBonus = Integer.parseInt ( classes.split ( "_" )[ 1 ] );
+
+                // If we found the character in our variables and we have no custom configuration for it
+                if ( counter != null && Tools.findByName ( character.getCounter (), counterName ) != null ) {
+
+                    // We create a clone and save it inside the counter
+                    // Since we dont want to overflow the .json we just delete the roles
+                    Character clone = new Character ( counter );
+                    clone.setPriorityBonus ( priorityBonus );
+                    clone.setRoles ( null );
+                    character.getCounter ().add ( clone );
+                }
+
+            } );
+        }
     }
 
-    private static void loadCounterData () {
+    private static void asd () {
 
         try {
 
@@ -130,7 +168,7 @@ public class Variables {
         Variables.comps.addAll ( Variables.<Comp>initialiseFolder ( Variables.COMPPATH, Comp.class ) );
     }
 
-    public static void clearVariables(){
+    public static void clearVariables () {
         Variables.characters.clear ();
         Variables.comps.clear ();
     }
@@ -150,10 +188,10 @@ public class Variables {
         }
 
         // Get configured character combo properties
-        clearVariables();
+        clearVariables ();
         initialiseCharacters ();
         initialiseComps ();
-        // loadCounterData ();
+        loadCounterData ();
 
         return true;
     }
