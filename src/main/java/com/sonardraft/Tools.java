@@ -148,7 +148,9 @@ public class Tools {
         draft.getRed ().setCombos ( filterRoles ( draft.getRed ().getCombos (), filterPickedRoles ( draft.getRed ().getPicks () ) ) );
 
         // Set comps available
-        draft.setComps ( getCompsAvailable ( draft, Variables.comps ) );
+        draft.getBlue ().setComps ( getCompsAvailable ( draft.getBlue (), Variables.comps ) );
+        draft.getRed ().setComps ( getCompsAvailable ( draft.getRed (), Variables.comps ) );
+
         // Order by priority
         Collections.sort ( draft.getBlue ().getCombos (), ( o1, o2 ) -> o2.getPriority ().compareTo ( o1.getPriority () ) );
         Collections.sort ( draft.getRed ().getCombos (), ( o1, o2 ) -> o2.getPriority ().compareTo ( o1.getPriority () ) );
@@ -239,7 +241,7 @@ public class Tools {
 
     }
 
-    private static List<Comp> getCompsAvailable ( Draft draft, List<Comp> comps ) {
+    private static List<Comp> getCompsAvailable ( Team team, List<Comp> comps ) {
 
         List<Comp> availableComps = new ArrayList<> ();
 
@@ -250,10 +252,10 @@ public class Tools {
             for ( CompCharacter character : comp.getPicks () ) {
 
                 // If we didnt pick the champ yet and it is not available for us
-                if ( !isCharacterAvailableOrPicked ( character, draft.getBlue () ) ) {
+                if ( !isCharacterAvailableOrPicked ( character, team ) ) {
 
                     for ( Character alternative : character.getAlternatives () ) {
-                        if ( isCharacterAvailableOrPicked ( alternative, draft.getBlue () ) ) {
+                        if ( isCharacterAvailableOrPicked ( alternative, team ) ) {
                             continue characterLoop;
                         }
                     }
@@ -265,9 +267,9 @@ public class Tools {
 
             availableComps.add ( comp );
 
-            comp.getBanns ().stream ().forEach ( character -> {
-                setCounterPriority ( character, draft.getRed ().getCombos () );
-            } );
+            /**            comp.getBanns ().stream ().forEach ( character -> {
+             setCounterPriority ( character, draft.getRed ().getCombos () );
+             } ); **/
 
         }
         return availableComps;

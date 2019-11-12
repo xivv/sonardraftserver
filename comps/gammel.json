@@ -1,0 +1,35 @@
+{
+  "name": "Soldat Special",
+  "picks": [
+    {
+      "name": "Graves",
+      "alternatives": [
+        {
+          "name": "Ekko"
+        }
+      ]
+    },
+    {
+      "name": "Darius",
+      "alternatives": [
+      ]
+    },
+    {
+      "name": "Sona",
+      "alternatives": [
+      ]
+    },
+    {
+      "name": "Ahri",
+      "alternatives": [
+      ]
+    },
+    {
+      "name": "Ezreal",
+      "alternatives": [
+      ]
+    }
+  ],
+  "banns": [
+  ]
+}

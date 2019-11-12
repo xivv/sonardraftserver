@@ -9,7 +9,6 @@ type Query {
 type Draft {
 	blue: Team
 	red: Team
-	comps: [Comp]
 }
 
 type Comp {
@@ -23,6 +22,7 @@ type Team {
 	banns: [Character]
 	combos: [Character]
 	openRoles: [Role]
+	comps: [Comp]
 }
 
 enum Role {

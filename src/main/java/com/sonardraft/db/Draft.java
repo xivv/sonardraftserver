@@ -5,21 +5,12 @@ import java.util.List;
 
 public class Draft {
 
-    private List<Comp> comps = new ArrayList<> ();
     private Team       blue;
     private Team       red;
 
     public Draft () {
         blue = new Team ();
         red = new Team ();
-    }
-
-    public List<Comp> getComps () {
-        return comps;
-    }
-
-    public void setComps ( List<Comp> comps ) {
-        this.comps = comps;
     }
 
     public Team getBlue () {
