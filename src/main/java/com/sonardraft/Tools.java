@@ -91,18 +91,23 @@ public class Tools {
                     }
                 }
             }
+
             for ( Character possibleCounter : character.getCounter () ) {
+                setCounterPriority ( possibleCounter, enemyTeam.getCombos () );
+            }
+        }
+    }
 
-                // If character is available and add the prio
-                Character foundCounter = findByName ( enemyTeam.getCombos (), possibleCounter.getName () );
+    public static void setCounterPriority ( Character character, List<Character> available ) {
 
-                if ( foundCounter != null ) {
-                    foundCounter.setPriority ( foundCounter.getPriority () + possibleCounter.getPriorityBonus () );
+        // If character is available and add the prio
+        Character foundCounter = findByName ( available, character.getName () );
 
-                    if ( foundCounter.getPriority () > 100 ) {
-                        foundCounter.setPriority ( 100 );
-                    }
-                }
+        if ( foundCounter != null ) {
+            foundCounter.setPriority ( foundCounter.getPriority () + character.getPriorityBonus () );
+
+            if ( foundCounter.getPriority () > 100 ) {
+                foundCounter.setPriority ( 100 );
             }
         }
     }
@@ -135,17 +140,15 @@ public class Tools {
         // Filter None and Picking
         filterSystemTemplates ( draft );
 
-        // Set comps available
-        draft.setComps ( getCompsAvailable ( draft.getBlue (), Variables.comps ) );
-
         // Filter combos for roles
 
         draft.getBlue ().setOpenRoles ( remainingRoles ( filterPickedRoles ( draft.getBlue ().getPicks () ) ) );
         draft.getRed ().setOpenRoles ( remainingRoles ( filterPickedRoles ( draft.getRed ().getPicks () ) ) );
         draft.getBlue ().setCombos ( filterRoles ( draft.getBlue ().getCombos (), filterPickedRoles ( draft.getBlue ().getPicks () ) ) );
-
         draft.getRed ().setCombos ( filterRoles ( draft.getRed ().getCombos (), filterPickedRoles ( draft.getRed ().getPicks () ) ) );
 
+        // Set comps available
+        draft.setComps ( getCompsAvailable ( draft, Variables.comps ) );
         // Order by priority
         Collections.sort ( draft.getBlue ().getCombos (), ( o1, o2 ) -> o2.getPriority ().compareTo ( o1.getPriority () ) );
         Collections.sort ( draft.getRed ().getCombos (), ( o1, o2 ) -> o2.getPriority ().compareTo ( o1.getPriority () ) );
@@ -236,7 +239,7 @@ public class Tools {
 
     }
 
-    private static List<Comp> getCompsAvailable ( Team team, List<Comp> comps ) {
+    private static List<Comp> getCompsAvailable ( Draft draft, List<Comp> comps ) {
 
         List<Comp> availableComps = new ArrayList<> ();
 
@@ -247,10 +250,10 @@ public class Tools {
             for ( CompCharacter character : comp.getPicks () ) {
 
                 // If we didnt pick the champ yet and it is not available for us
-                if ( !isCharacterAvailableOrPicked ( character, team ) ) {
+                if ( !isCharacterAvailableOrPicked ( character, draft.getBlue () ) ) {
 
                     for ( Character alternative : character.getAlternatives () ) {
-                        if ( isCharacterAvailableOrPicked ( alternative, team ) ) {
+                        if ( isCharacterAvailableOrPicked ( alternative, draft.getBlue () ) ) {
                             continue characterLoop;
                         }
                     }
@@ -261,6 +264,11 @@ public class Tools {
             }
 
             availableComps.add ( comp );
+
+            comp.getBanns ().stream ().forEach ( character -> {
+                setCounterPriority ( character, draft.getRed ().getCombos () );
+            } );
+
         }
         return availableComps;
     }
@@ -283,6 +291,10 @@ public class Tools {
         List<Mat> result = new ArrayList<> ();
 
         if ( isClientRunning () ) {
+
+            if ( saveResult ) {
+                clearFolder ( new File ( Variables.SCREENPATH ) );
+            }
 
             WindowUtils.getAllWindows ( true ).forEach ( desktopWindow -> {
 
@@ -432,7 +444,7 @@ public class Tools {
 
     public static Mat BufferedImage2Mat ( BufferedImage image ) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream ();
-        ImageIO.write ( image, "jpg", byteArrayOutputStream );
+        ImageIO.write ( image, "png", byteArrayOutputStream );
         byteArrayOutputStream.flush ();
         return Imgcodecs.imdecode ( new MatOfByte ( byteArrayOutputStream.toByteArray () ), Imgcodecs.IMREAD_UNCHANGED );
     }

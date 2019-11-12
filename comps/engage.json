@@ -1,0 +1,37 @@
+{
+  "name": "Super Engage",
+  "picks": [{
+      "name": "Olaf",
+      "alternatives": [{
+        "name": "Urgot"
+      }]
+    },
+    {
+      "name": "Zac",
+      "alternatives": [
+
+      ]
+    },
+    {
+      "name": "Veigar",
+      "alternatives": [
+
+      ]
+    },
+    {
+      "name": "Lucian",
+      "alternatives": [
+
+      ]
+    },
+    {
+      "name": "Braum",
+      "alternatives": [
+
+      ]
+    }
+  ],
+  "banns": [
+
+  ]
+}

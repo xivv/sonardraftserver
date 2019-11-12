@@ -2,6 +2,7 @@ package com.sonardraft;
 
 import com.google.common.io.Resources;
 import com.google.common.reflect.TypeToken;
+import com.google.errorprone.annotations.Var;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.sonardraft.db.Character;
@@ -129,6 +130,11 @@ public class Variables {
         Variables.comps.addAll ( Variables.<Comp>initialiseFolder ( Variables.COMPPATH, Comp.class ) );
     }
 
+    public static void clearVariables(){
+        Variables.characters.clear ();
+        Variables.comps.clear ();
+    }
+
     public static boolean init () {
 
         BASE = System.getProperty ( "user.dir" ) + "\\";
@@ -144,6 +150,7 @@ public class Variables {
         }
 
         // Get configured character combo properties
+        clearVariables();
         initialiseCharacters ();
         initialiseComps ();
         // loadCounterData ();

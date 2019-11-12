@@ -46,12 +46,13 @@ public class GraphQLDataFetchers {
 
 		Draft draft = new Draft();
 
-		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Draven"));
-		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Evelynn"));
-		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Ahri"));
-		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Kled"));
+		/**draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Lulu"));
+		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Amumu"));
+		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Leona"));
+		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Cassiopeia"));**/
+		draft.getBlue().getPicks().add(Tools.findByName(Variables.characters, "Zac"));
 
-		draft.getRed().getPicks().add(Tools.findByName(Variables.characters, "Gragas"));
+		draft.getRed().getPicks().add(Tools.findByName(Variables.characters, "Darius"));
 		draft.getRed().getPicks().add(Tools.findByName(Variables.characters, "Graves"));
 
 		return Tools.getPriorityDraft(draft);
