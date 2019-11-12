@@ -5,7 +5,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Garen",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Poppy",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Kled",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Illaoi",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Nasus",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Ornn",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

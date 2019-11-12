@@ -4,7 +4,52 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Ashe",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Trundle",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Singed",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Nunu",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

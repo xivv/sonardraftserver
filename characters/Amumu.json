@@ -4,7 +4,40 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Shyvana",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Ekko",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Shaco",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Tryndamere",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

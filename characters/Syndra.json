@@ -5,7 +5,56 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Fizz",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 61
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

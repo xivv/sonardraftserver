@@ -4,7 +4,48 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Morgana",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Blitzcrank",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Thresh",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Xayah",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Camille",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Corki",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Ekko",
+      "priorityBonus": 50
+    },
+    {
+      "name": "Soraka",
+      "priorityBonus": 50
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

@@ -4,7 +4,56 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Sivir",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Blitzcrank",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Nocturne",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Heimerdinger",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Soraka",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

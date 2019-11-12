@@ -5,7 +5,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yorick",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Viktor",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Volibear",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Tryndamere",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC"
   ],

@@ -4,7 +4,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Draven",
+      "priorityBonus": 83
+    },
+    {
+      "name": "Graves",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Twitch",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Kalista",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Corki",
+      "priorityBonus": 66
+    }
+  ],
   "features": [
     "POKE"
   ],

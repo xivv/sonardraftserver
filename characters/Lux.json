@@ -5,7 +5,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Talon",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Gragas",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 65
+    }
+  ],
   "features": [
     "CC",
     "POKE",

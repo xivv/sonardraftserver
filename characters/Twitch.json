@@ -4,7 +4,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Jinx",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Quinn",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Corki",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Lulu",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 61
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

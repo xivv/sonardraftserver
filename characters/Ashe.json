@@ -4,7 +4,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Ezreal",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Graves",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Jinx",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Quinn",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Taric",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

@@ -4,7 +4,52 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Graves",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Leona",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Blitzcrank",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Thresh",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Corki",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

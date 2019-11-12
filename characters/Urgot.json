@@ -4,7 +4,56 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Graves",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Nami",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Soraka",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Bard",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Tryndamere",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Maokai",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "CC",
     "WAVECLEAR",

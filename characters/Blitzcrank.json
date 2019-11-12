@@ -4,7 +4,56 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Leona",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Alistar",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Ezreal",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Thresh",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Braum",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Amumu",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Taric",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Illaoi",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Janna",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Lulu",
+      "priorityBonus": 61
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

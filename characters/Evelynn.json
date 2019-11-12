@@ -4,7 +4,40 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Ryze",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Heimerdinger",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Nautilus",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "CC",
     "ROAM",

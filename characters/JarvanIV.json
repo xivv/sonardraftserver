@@ -4,7 +4,48 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yorick",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Shen",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Tryndamere",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 61
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

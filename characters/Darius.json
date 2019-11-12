@@ -4,7 +4,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yorick",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 70
+    }
+  ],
   "features": [
     "HARDCC",
     "WAVECLEAR",

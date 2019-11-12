@@ -4,7 +4,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Pantheon",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 65
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

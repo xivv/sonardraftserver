@@ -5,7 +5,56 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Zyra",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Cassiopeia",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "DUELLANT"
   ],

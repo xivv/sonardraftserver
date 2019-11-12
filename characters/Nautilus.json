@@ -6,7 +6,56 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Garen",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Shyvana",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Malphite",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Nunu",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Shaco",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

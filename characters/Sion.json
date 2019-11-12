@@ -5,7 +5,52 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Pantheon",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Nasus",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

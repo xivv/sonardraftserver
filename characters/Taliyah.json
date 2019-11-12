@@ -5,7 +5,48 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Ziggs",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Zoe",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 56
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 50
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 49
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 48
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 47
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

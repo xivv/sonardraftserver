@@ -4,7 +4,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 83
+    },
+    {
+      "name": "Heimerdinger",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Karma",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

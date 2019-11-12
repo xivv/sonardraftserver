@@ -4,7 +4,52 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Syndra",
+      "priorityBonus": 83
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Brand",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Nunu",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Anivia",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Gragas",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

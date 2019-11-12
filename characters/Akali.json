@@ -5,7 +5,48 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Garen",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Rumble",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 69
+    }
+  ],
   "features": [
     "DUELLANT",
     "ROAM",

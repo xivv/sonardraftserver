@@ -5,7 +5,56 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Olaf",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Ryze",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Trundle",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 61
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

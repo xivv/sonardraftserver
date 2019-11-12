@@ -5,7 +5,44 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Viktor",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Cassiopeia",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Galio",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

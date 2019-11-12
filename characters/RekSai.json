@@ -4,7 +4,44 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Fizz",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Gangplank",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Nunu",
+      "priorityBonus": 50
+    },
+    {
+      "name": "Zac",
+      "priorityBonus": 49
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 49
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

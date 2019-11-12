@@ -4,7 +4,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Lucian",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Jinx",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Ezreal",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Twitch",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Bard",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Kalista",
+      "priorityBonus": 57
+    }
+  ],
   "features": [
     "CC",
     "WAVECLEAR"

@@ -4,7 +4,36 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Diana",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Gragas",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Cassiopeia",
+      "priorityBonus": 56
+    }
+  ],
   "features": [
     "CC",
     "DUELLANT",

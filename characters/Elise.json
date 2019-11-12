@@ -4,7 +4,48 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Kassadin",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Gangplank",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Kayn",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Maokai",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Anivia",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "HARDCC",
     "ENGAGE",

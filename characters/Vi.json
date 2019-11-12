@@ -4,7 +4,44 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Riven",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Karma",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Poppy",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 61
+    }
+  ],
   "features": [
     "HARDCC",
     "ENGAGE",

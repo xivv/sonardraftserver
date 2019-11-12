@@ -5,7 +5,52 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Galio",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 61
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

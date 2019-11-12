@@ -4,7 +4,48 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yorick",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Udyr",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Alistar",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Nocturne",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

@@ -6,7 +6,52 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Rumble",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Zac",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Shen",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

@@ -6,7 +6,56 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Sona",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Ryze",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "CC",
     "SUSTAIN",

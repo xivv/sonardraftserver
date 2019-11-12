@@ -4,7 +4,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Fiora",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Shen",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Singed",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Trundle",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Malphite",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

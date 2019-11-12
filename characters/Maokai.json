@@ -5,7 +5,44 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Shyvana",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Nasus",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Singed",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

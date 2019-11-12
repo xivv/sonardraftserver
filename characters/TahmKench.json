@@ -4,7 +4,56 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Janna",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Singed",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Kalista",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Ornn",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 56
+    },
+    {
+      "name": "Ekko",
+      "priorityBonus": 50
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

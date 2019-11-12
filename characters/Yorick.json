@@ -4,7 +4,40 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Trundle",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Nocturne",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Nunu",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Rengar",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "CC",
     "SPLITPUSH",

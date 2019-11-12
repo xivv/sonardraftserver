@@ -6,7 +6,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Lux",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Nami",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Zac",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Rumble",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "CC",
     "POKE",

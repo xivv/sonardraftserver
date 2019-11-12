@@ -5,7 +5,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Olaf",
+      "priorityBonus": 81
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Udyr",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Nasus",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Volibear",
+      "priorityBonus": 66
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

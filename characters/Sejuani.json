@@ -4,7 +4,48 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Vi",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Twitch",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Nocturne",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Karma",
+      "priorityBonus": 57
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

@@ -4,7 +4,44 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Warwick",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

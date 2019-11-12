@@ -4,7 +4,52 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Cassiopeia",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Sona",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Soraka",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Bard",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Janna",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Nocturne",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Taric",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Zac",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "CC",
     "HARDENGAGE",

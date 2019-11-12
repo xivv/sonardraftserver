@@ -4,7 +4,40 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Ashe",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Urgot",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Graves",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Nasus",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "ENGAGE",
     "POKE",

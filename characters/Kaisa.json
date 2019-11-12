@@ -5,7 +5,16 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "ENGAGE",
     "WAVECLEAR",

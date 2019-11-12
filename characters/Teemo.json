@@ -5,7 +5,40 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yorick",
+      "priorityBonus": 83
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Rumble",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 66
+    }
+  ],
   "features": [
     "CC",
     "POKE",

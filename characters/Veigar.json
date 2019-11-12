@@ -4,7 +4,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Talon",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Ryze",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Galio",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "HARDCC",
     "WAVECLEAR",

@@ -4,7 +4,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Ryze",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Lissandra",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Heimerdinger",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 66
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

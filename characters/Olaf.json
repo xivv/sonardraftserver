@@ -5,7 +5,52 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yorick",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Volibear",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

@@ -5,7 +5,56 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Pantheon",
+      "priorityBonus": 96
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Udyr",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Poppy",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

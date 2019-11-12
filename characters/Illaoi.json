@@ -4,7 +4,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Lulu",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Tryndamere",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Nasus",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Kayn",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "WAVECLEAR",
     "DUELLANT",

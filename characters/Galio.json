@@ -5,7 +5,44 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Udyr",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Braum",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Janna",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Malphite",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Ryze",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

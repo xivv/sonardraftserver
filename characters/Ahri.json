@@ -7,7 +7,56 @@
   "counter": [
     {
       "name": "Hecarim",
-      "priorityBonus": 50
+      "roles": [],
+      "combos": [],
+      "counter": [],
+      "features": [],
+      "priorityBonus": 50,
+      "priority": 0
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Lissandra",
+      "priorityBonus": 67
     }
   ],
   "features": [

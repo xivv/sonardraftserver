@@ -5,7 +5,56 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Cassiopeia",
+      "priorityBonus": 83
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Brand",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Anivia",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 66
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

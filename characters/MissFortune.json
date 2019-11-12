@@ -4,7 +4,52 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Tristana",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Braum",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Taric",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Quinn",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Shaco",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Gangplank",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "CC"
   ],

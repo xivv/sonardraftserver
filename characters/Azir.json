@@ -4,7 +4,56 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Ziggs",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

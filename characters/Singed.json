@@ -4,7 +4,56 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Teemo",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Rumble",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 65
+    }
+  ],
   "features": [
     "HARDCC",
     "ENGAGE",

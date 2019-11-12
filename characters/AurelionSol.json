@@ -4,7 +4,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Zed",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Zoe",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Alistar",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 56
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 56
+    },
+    {
+      "name": "Ekko",
+      "priorityBonus": 50
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 49
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

@@ -4,7 +4,36 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Nasus",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Sejuani",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Janna",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

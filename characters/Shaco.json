@@ -5,7 +5,48 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Shyvana",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Udyr",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Evelynn",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Warwick",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Viktor",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "HARDCC",
     "ENGAGE",

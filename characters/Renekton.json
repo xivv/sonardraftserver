@@ -5,7 +5,56 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Trundle",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Shyvana",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Ryze",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Volibear",
+      "priorityBonus": 68
+    }
+  ],
   "features": [
     "HARDCC",
     "ENGAGE",

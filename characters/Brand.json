@@ -4,7 +4,52 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Kassadin",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Galio",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "HARDCC",
     "POKE",

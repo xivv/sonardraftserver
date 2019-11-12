@@ -4,7 +4,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yorick",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Warwick",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Nasus",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

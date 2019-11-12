@@ -4,7 +4,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Vayne",
+      "priorityBonus": 83
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Graves",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Ezreal",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Quinn",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Braum",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "DUELLANT"
   ],

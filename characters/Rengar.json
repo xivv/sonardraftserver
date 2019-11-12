@@ -5,7 +5,48 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Jax",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Ekko",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

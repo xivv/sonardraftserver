@@ -5,7 +5,52 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Soraka",
+      "priorityBonus": 81
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 67
+    }
+  ],
   "features": [
     "CC",
     "ASSASINATION"

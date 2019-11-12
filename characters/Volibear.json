@@ -4,7 +4,56 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Teemo",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 61
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

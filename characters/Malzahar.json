@@ -4,7 +4,48 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Gangplank",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Galio",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Brand",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "HARDCC",
     "WAVECLEAR"

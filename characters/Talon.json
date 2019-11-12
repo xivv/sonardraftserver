@@ -4,7 +4,48 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yorick",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Gragas",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

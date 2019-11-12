@@ -6,7 +6,44 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Diana",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Heimerdinger",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Tryndamere",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Cassiopeia",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

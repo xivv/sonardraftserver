@@ -4,7 +4,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 98
+    },
+    {
+      "name": "Quinn",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Ashe",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Corki",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Graves",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Twitch",
+      "priorityBonus": 68
+    }
+  ],
   "features": [
     "HARDCC",
     "DUELLANT"

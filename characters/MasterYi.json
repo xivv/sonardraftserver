@@ -4,7 +4,40 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Jax",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Rammus",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Tryndamere",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "ENGAGE",
     "DUELLANT"

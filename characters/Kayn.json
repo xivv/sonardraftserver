@@ -4,7 +4,40 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Warwick",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Udyr",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Kindred",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Rengar",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Ivern",
+      "priorityBonus": 57
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

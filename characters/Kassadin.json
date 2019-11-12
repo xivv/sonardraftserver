@@ -4,7 +4,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Talon",
+      "priorityBonus": 96
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Heimerdinger",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 66
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

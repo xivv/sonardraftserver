@@ -6,7 +6,52 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Teemo",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Shyvana",
+      "priorityBonus": 65
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

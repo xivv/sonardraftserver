@@ -4,7 +4,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Garen",
+      "priorityBonus": 84
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Volibear",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Malphite",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 70
+    }
+  ],
   "features": [
     "HARDCC",
     "DUELLANT",

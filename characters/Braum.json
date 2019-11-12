@@ -4,7 +4,56 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Morgana",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Zyra",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Leona",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Lulu",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Karma",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Soraka",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Alistar",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Nami",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Sona",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Janna",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "HARDCC",
     "SUSTAIN",

@@ -4,7 +4,48 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Kayle",
+      "priorityBonus": 95
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Nasus",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Lissandra",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Tryndamere",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Fiddlesticks",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 65
+    }
+  ],
   "features": [
     "CC",
     "ASSASINATION"

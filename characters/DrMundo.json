@@ -5,7 +5,44 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Trundle",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Shyvana",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Warwick",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

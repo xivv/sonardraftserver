@@ -4,7 +4,56 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Jax",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Singed",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Malphite",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Shen",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "ENGAGE",
     "DUELLANT"

@@ -6,7 +6,48 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Olaf",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Shen",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Elise",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Volibear",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Malphite",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Ryze",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Udyr",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

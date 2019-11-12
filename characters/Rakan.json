@@ -4,7 +4,52 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Morgana",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Lulu",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Janna",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Alistar",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Leona",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Bard",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Karma",
+      "priorityBonus": 56
+    },
+    {
+      "name": "Zilean",
+      "priorityBonus": 50
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 49
+    },
+    {
+      "name": "Zyra",
+      "priorityBonus": 49
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

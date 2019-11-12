@@ -4,7 +4,48 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yasuo",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "ENGAGE",
     "POKE",

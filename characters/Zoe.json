@@ -4,7 +4,48 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Zed",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "HARDCC",
     "POKE",

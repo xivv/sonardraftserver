@@ -4,7 +4,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Diana",
+      "priorityBonus": 96
+    },
+    {
+      "name": "Fiddlesticks",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Lissandra",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Lulu",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Heimerdinger",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 71
+    }
+  ],
   "features": [
     "ENGAGE",
     "ROAM"

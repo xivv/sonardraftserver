@@ -4,7 +4,44 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Tristana",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Jinx",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Jhin",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Ezreal",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Kalista",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Twitch",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "CC"
   ],

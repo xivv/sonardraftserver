@@ -5,7 +5,44 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Graves",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Corki",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

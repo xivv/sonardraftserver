@@ -5,7 +5,56 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Malphite",
+      "priorityBonus": 84
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Singed",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Ryze",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Nasus",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Rumble",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Shyvana",
+      "priorityBonus": 68
+    }
+  ],
   "features": [
     "HARDCC",
     "ENGAGE",

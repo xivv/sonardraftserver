@@ -5,7 +5,44 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yorick",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

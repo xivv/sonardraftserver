@@ -5,7 +5,52 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Syndra",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Brand",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 65
+    }
+  ],
   "features": [
     "HARDCC",
     "POKE",

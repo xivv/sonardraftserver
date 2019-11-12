@@ -5,7 +5,12 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Lux",
+      "priorityBonus": 48
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

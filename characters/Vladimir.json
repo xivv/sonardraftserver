@@ -6,7 +6,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Swain",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Fiddlesticks",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 65
+    }
+  ],
   "features": [
     "ENGAGE",
     "WAVECLEAR",

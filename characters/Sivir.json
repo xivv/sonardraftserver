@@ -4,7 +4,40 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Vayne",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Twitch",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Kalista",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "WAVECLEAR"
   ],

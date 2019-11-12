@@ -4,7 +4,44 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yasuo",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Evelynn",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

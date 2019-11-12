@@ -5,7 +5,56 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Syndra",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Soraka",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Sona",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Brand",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Blitzcrank",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Gragas",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Azir",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Fiddlesticks",
+      "priorityBonus": 57
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

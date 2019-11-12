@@ -4,7 +4,40 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Graves",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Rengar",
+      "priorityBonus": 50
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 49
+    },
+    {
+      "name": "Illaoi",
+      "priorityBonus": 49
+    },
+    {
+      "name": "Kindred",
+      "priorityBonus": 48
+    },
+    {
+      "name": "Rumble",
+      "priorityBonus": 48
+    },
+    {
+      "name": "Warwick",
+      "priorityBonus": 47
+    },
+    {
+      "name": "Amumu",
+      "priorityBonus": 47
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

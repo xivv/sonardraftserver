@@ -5,7 +5,52 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Jax",
+      "priorityBonus": 96
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Riven",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Soraka",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 71
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

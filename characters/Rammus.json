@@ -4,7 +4,52 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Trundle",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Shyvana",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Soraka",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Zac",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Kennen",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Olaf",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE",

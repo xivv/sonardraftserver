@@ -6,7 +6,48 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Janna",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Swain",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Yorick",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Ryze",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Irelia",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "HARDCC",
     "HARDENGAGE"

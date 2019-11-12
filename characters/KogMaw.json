@@ -5,7 +5,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Blitzcrank",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Jinx",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Ashe",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Poppy",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Ezreal",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Zyra",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Ryze",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "CC",
     "POKE"

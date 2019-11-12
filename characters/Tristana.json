@@ -5,7 +5,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Corki",
+      "priorityBonus": 78
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Twitch",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Jinx",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Thresh",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

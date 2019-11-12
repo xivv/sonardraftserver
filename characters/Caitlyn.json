@@ -4,7 +4,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Sivir",
+      "priorityBonus": 96
+    },
+    {
+      "name": "Jinx",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Braum",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Leona",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "CC",
     "POKE"

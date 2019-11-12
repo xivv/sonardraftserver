@@ -4,7 +4,48 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Ashe",
+      "priorityBonus": 80
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Graves",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Vayne",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Quinn",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Alistar",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Jhin",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Sona",
+      "priorityBonus": 57
+    }
+  ],
   "features": [
     "CC",
     "HARDENGAGE"

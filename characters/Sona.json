@@ -6,7 +6,52 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Blitzcrank",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Leona",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Taric",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Thresh",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Nautilus",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Zyra",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Graves",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

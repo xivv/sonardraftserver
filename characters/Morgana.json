@@ -5,7 +5,56 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Talon",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Karma",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Janna",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Sona",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "CC",
     "ENGAGE",

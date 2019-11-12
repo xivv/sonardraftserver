@@ -4,7 +4,48 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Corki",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Urgot",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Amumu",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "CC",
     "WAVECLEAR",

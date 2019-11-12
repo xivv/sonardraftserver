@@ -4,7 +4,56 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Galio",
+      "priorityBonus": 84
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Heimerdinger",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Fiddlesticks",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Karma",
+      "priorityBonus": 65
+    }
+  ],
   "features": [
     "CC",
     "POKE",

@@ -4,7 +4,52 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Sivir",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Lulu",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Nami",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Volibear",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Zyra",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Braum",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Corki",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Leona",
+      "priorityBonus": 57
+    }
+  ],
   "features": [
     "HARDCC",
     "SUSTAIN",

@@ -4,7 +4,52 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Morgana",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Trundle",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Nunu",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Lulu",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Shaco",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Gangplank",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Cassiopeia",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Maokai",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Shyvana",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Anivia",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 57
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

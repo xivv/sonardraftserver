@@ -4,7 +4,52 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Olaf",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Alistar",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Tryndamere",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Vi",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Udyr",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Shaco",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Zac",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Shyvana",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Heimerdinger",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Jax",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

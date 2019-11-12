@@ -4,7 +4,56 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Ezreal",
+      "priorityBonus": 82
+    },
+    {
+      "name": "Corki",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 77
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Quinn",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Draven",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Lucian",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Graves",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Ashe",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Twitch",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 64
+    }
+  ],
   "features": [
     "CC"
   ],

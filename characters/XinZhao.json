@@ -4,7 +4,48 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Jax",
+      "priorityBonus": 79
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Malphite",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Volibear",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Renekton",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Nocturne",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Udyr",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Garen",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

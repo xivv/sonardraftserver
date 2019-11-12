@@ -4,7 +4,52 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Janna",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Evelynn",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Alistar",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Brand",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Cassiopeia",
+      "priorityBonus": 59
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

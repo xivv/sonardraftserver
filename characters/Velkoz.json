@@ -5,7 +5,52 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Yasuo",
+      "priorityBonus": 82
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Katarina",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

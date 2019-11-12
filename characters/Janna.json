@@ -4,7 +4,56 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Sona",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Nami",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Blitzcrank",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Zyra",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Sivir",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Nidalee",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Hecarim",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Karma",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Sion",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Evelynn",
+      "priorityBonus": 57
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

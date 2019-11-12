@@ -4,7 +4,52 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Syndra",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 74
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Gragas",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Akali",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

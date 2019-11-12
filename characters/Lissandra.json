@@ -5,7 +5,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Kassadin",
+      "priorityBonus": 75
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Anivia",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Brand",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

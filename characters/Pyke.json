@@ -5,7 +5,12 @@
     "Mid"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Alistar",
+      "priorityBonus": 66
+    }
+  ],
   "features": [
     "HARDCC",
     "ROAM",

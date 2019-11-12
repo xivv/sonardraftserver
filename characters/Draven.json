@@ -4,7 +4,52 @@
     "Bottom"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Varus",
+      "priorityBonus": 81
+    },
+    {
+      "name": "Thresh",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Blitzcrank",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Caitlyn",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Nami",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Quinn",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Leona",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Urgot",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Taric",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Ashe",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "HARDCC",
     "DUELLANT"

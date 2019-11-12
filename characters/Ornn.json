@@ -5,7 +5,56 @@
     "Jungle"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Jax",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Darius",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Teemo",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Urgot",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Gnar",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Jayce",
+      "priorityBonus": 57
+    },
+    {
+      "name": "Vladimir",
+      "priorityBonus": 50
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 49
+    },
+    {
+      "name": "Veigar",
+      "priorityBonus": 49
+    },
+    {
+      "name": "Kayle",
+      "priorityBonus": 49
+    }
+  ],
   "features": [
     "CC",
     "HARDCC",

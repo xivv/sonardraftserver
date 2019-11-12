@@ -6,7 +6,48 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Nasus",
+      "priorityBonus": 72
+    },
+    {
+      "name": "Pantheon",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Anivia",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Gragas",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Aatrox",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Malzahar",
+      "priorityBonus": 62
+    }
+  ],
   "features": [
     "CC",
     "WAVECLEAR",

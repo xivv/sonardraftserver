@@ -5,7 +5,52 @@
     "Top"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Brand",
+      "priorityBonus": 83
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 69
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Mordekaiser",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Fizz",
+      "priorityBonus": 66
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Annie",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Diana",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Yasuo",
+      "priorityBonus": 60
+    },
+    {
+      "name": "Gragas",
+      "priorityBonus": 60
+    }
+  ],
   "features": [
     "CC",
     "HARDCC"

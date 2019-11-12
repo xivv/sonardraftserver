@@ -4,7 +4,52 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Gnar",
+      "priorityBonus": 73
+    },
+    {
+      "name": "Blitzcrank",
+      "priorityBonus": 65
+    },
+    {
+      "name": "Cassiopeia",
+      "priorityBonus": 63
+    },
+    {
+      "name": "Tristana",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Zac",
+      "priorityBonus": 62
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 61
+    },
+    {
+      "name": "Ahri",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Varus",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Ziggs",
+      "priorityBonus": 59
+    },
+    {
+      "name": "Fiora",
+      "priorityBonus": 58
+    },
+    {
+      "name": "Leona",
+      "priorityBonus": 58
+    }
+  ],
   "features": [
     "CC",
     "SUSTAIN"

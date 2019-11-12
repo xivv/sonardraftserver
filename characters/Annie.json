@@ -5,7 +5,48 @@
     "Support"
   ],
   "combos": [],
-  "counter": [],
+  "counter": [
+    {
+      "name": "Brand",
+      "priorityBonus": 76
+    },
+    {
+      "name": "Orianna",
+      "priorityBonus": 71
+    },
+    {
+      "name": "Kassadin",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Morgana",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Sion",
+      "priorityBonus": 70
+    },
+    {
+      "name": "Syndra",
+      "priorityBonus": 68
+    },
+    {
+      "name": "Lux",
+      "priorityBonus": 67
+    },
+    {
+      "name": "Zed",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Xerath",
+      "priorityBonus": 64
+    },
+    {
+      "name": "Talon",
+      "priorityBonus": 63
+    }
+  ],
   "features": [
     "HARDCC",
     "ENGAGE",
