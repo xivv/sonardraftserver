@@ -20,10 +20,13 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Stream;
 
 public class Variables {
 
@@ -53,9 +56,18 @@ public class Variables {
     private Variables () {
     }
 
+    private static String readLineByLineJava8 ( String filePath ) {
+        StringBuilder contentBuilder = new StringBuilder ();
+        try ( Stream<String> stream = Files.lines ( Paths.get ( filePath ), StandardCharsets.UTF_8 ) ) {
+            stream.forEach ( s -> contentBuilder.append ( s ).append ( "\n" ) );
+        } catch ( IOException e ) {
+            e.printStackTrace ();
+        }
+        return contentBuilder.toString ();
+    }
+
     public static void loadCounterData () {
 
-        //String baseURL = "http://championcounter.com/";
         String baseURL = "http://lolcounter.com/champions/";
 
         for ( Character character : Variables.characters ) {
@@ -65,28 +77,30 @@ public class Variables {
             Document doc = null;
             try {
                 doc = Jsoup.connect ( url ).get ();
-            } catch ( IOException e ) {
+            } catch ( Exception e ) {
                 logger.log ( Level.INFO, "Couldnt load counter data: " + e.getMessage () );
                 return;
             }
 
-            // Each weak-block represents a counter
-            Elements weakBlocks = doc.getElementsByClass ( "weak-block" );
+            // Each weak-block represents a iteration of counters , a champBlock is a counter
+            Element weakBlock = doc.getElementsByClass ( "weak-block" ).get ( 0 );
+            Elements champBlocks = weakBlock.getElementsByClass ( "champ-block" );
 
-            weakBlocks.forEach ( weakBlock -> {
+            champBlocks.forEach ( champBlock -> {
                 // This is the name, which can only be one element
-                String counterName = weakBlock.getElementsByClass ( "name" ).get ( 0 ).val ();
+                String counterName = champBlock.getElementsByClass ( "name" ).get ( 0 ).text ();
                 Character counter = Tools.findByName ( Variables.characters, counterName );
 
                 // This is the %, which can only be one element
-                Element percentage = weakBlock.getElementsByClass ( "per-bar" ).get ( 0 );
+                Element percentage = champBlock.getElementsByClass ( "per-bar" ).get ( 0 );
                 // There is only one item inside <div style="".. class="_59"...
-                String classes = String.valueOf ( percentage.getAllElements ().get ( 0 ).getClass () );
+                String classes = String.valueOf ( percentage.getAllElements ().get ( 0 ).getAllElements ().get ( 1 ).attributes ()
+                                                            .get ( "class" ) );
 
                 Integer priorityBonus = Integer.parseInt ( classes.split ( "_" )[ 1 ] );
 
                 // If we found the character in our variables and we have no custom configuration for it
-                if ( counter != null && Tools.findByName ( character.getCounter (), counterName ) != null ) {
+                if ( counter != null && Tools.findByName ( character.getCounter (), counterName ) == null ) {
 
                     // We create a clone and save it inside the counter
                     // Since we dont want to overflow the .json we just delete the roles
@@ -100,31 +114,19 @@ public class Variables {
         }
     }
 
-    private static void asd () {
+    private static void saveCharacterConfiguration () {
 
         try {
 
-            BASE = System.getProperty ( "user.dir" ) + "\\";
-            String baseURL = "http://lolcounter.com/champions/";
-
             for ( Character character : characters ) {
-
-                String url = baseURL + character.getName ();
-
-                List<Character> counters = new ArrayList<> ();
-                character.setCounter ( counters );
-                character.setMat ( null );
-                character.setPriorityBonus ( null );
-
                 String freshConfiguration = new GsonBuilder ().setPrettyPrinting ().create ().toJson ( character );
                 try ( FileOutputStream outputStream = new FileOutputStream ( Variables.CHARACTERPATH + character.getName () + ".json" ) ) {
                     byte[] strToBytes = freshConfiguration.getBytes ();
                     outputStream.write ( strToBytes );
                 }
             }
-
         } catch ( Exception e ) {
-            logger.log ( Level.SEVERE, "Couldnt load counter data:" + e.getMessage () );
+            logger.log ( Level.SEVERE, "Couldnt save characters data:" + e.getMessage () );
         }
     }
 
