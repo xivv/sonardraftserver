@@ -1,12 +1,11 @@
 package com.sonardraft.db;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.opencv.core.Mat;
-
 import com.sonardraft.db.enums.Feature;
 import com.sonardraft.db.enums.Role;
+import org.opencv.core.Mat;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Character {
 

@@ -78,7 +78,7 @@ public class Variables {
             try {
                 doc = Jsoup.connect ( url ).get ();
             } catch ( Exception e ) {
-                logger.log ( Level.INFO, "Couldnt load counter data: " + e.getMessage () );
+                logger.log ( Level.SEVERE, "Couldnt load counter data: " + e.getLocalizedMessage ());
                 return;
             }
 
@@ -115,10 +115,11 @@ public class Variables {
     }
 
     private static void saveCharacterConfiguration () {
-
         try {
-
             for ( Character character : characters ) {
+                character.setMat ( null );
+                character.setPriorityBonus ( null );
+
                 String freshConfiguration = new GsonBuilder ().setPrettyPrinting ().create ().toJson ( character );
                 try ( FileOutputStream outputStream = new FileOutputStream ( Variables.CHARACTERPATH + character.getName () + ".json" ) ) {
                     byte[] strToBytes = freshConfiguration.getBytes ();
@@ -175,6 +176,11 @@ public class Variables {
         Variables.comps.clear ();
     }
 
+    public static void reloadCounterData(){
+        loadCounterData ();
+        saveCharacterConfiguration ();
+    }
+
     public static boolean init () {
 
         BASE = System.getProperty ( "user.dir" ) + "\\";
@@ -193,7 +199,6 @@ public class Variables {
         clearVariables ();
         initialiseCharacters ();
         initialiseComps ();
-        loadCounterData ();
 
         return true;
     }

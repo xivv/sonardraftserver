@@ -1,8 +1,5 @@
 package com.sonardraft.db;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Draft {
 
     private Team       blue;

@@ -123,6 +123,7 @@ public class Tools {
 
     public static Draft getPriorityDraft ( Draft draft ) {
 
+
         List<Character> available = new ArrayList<> ();
         available.addAll ( Variables.characters );
 

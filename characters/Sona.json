@@ -1,13 +1,11 @@
 {
   "name": "Sona",
   "roles": [
-    "Mid",
     "Bottom",
     "Support"
   ],
   "combos": [],
-  "counter": [
-    {
+  "counter": [{
       "name": "Blitzcrank",
       "priorityBonus": 74
     },

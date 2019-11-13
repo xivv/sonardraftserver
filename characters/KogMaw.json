@@ -1,12 +1,10 @@
 {
   "name": "KogMaw",
   "roles": [
-    "Mid",
     "Bottom"
   ],
   "combos": [],
-  "counter": [
-    {
+  "counter": [{
       "name": "Blitzcrank",
       "priorityBonus": 72
     },
